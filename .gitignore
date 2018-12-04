@@ -17,3 +17,6 @@ __pycache__
 /.vagrant/
 /Vagrantfile.local
 !.gitignore
+.pipeline-minikube-paindumonde-github-api-token
+hub
+hub.enc
