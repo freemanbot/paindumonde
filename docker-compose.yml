@@ -29,6 +29,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    image: paindumonde-django-app:tag
     links:
       - db:db
       - redis:redis
@@ -39,3 +40,4 @@ services:
       - db
       - redis
       - elasticsearch
+

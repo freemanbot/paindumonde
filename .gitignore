@@ -20,3 +20,4 @@ __pycache__
 .pipeline-minikube-paindumonde-github-api-token
 hub
 hub.enc
+nottocommit
