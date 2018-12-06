@@ -12,7 +12,7 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'gcr.io/${PROJECT_ID}/pipeline:${COMMIT_SHA}'
+      - 'gcr.io/${PROJECT_ID}/paindumonde-django-app:${COMMIT_SHA}'
       - '.'
 
   # Retrieve and decrypt the GitHub Hub configuration. 
@@ -79,25 +79,25 @@ steps:
           template:
             spec:
               containers:
-                - name: pipeline
-                  image: gcr.io/${PROJECT_ID}/pipeline:${COMMIT_SHA}
+                - name: app
+                  image: gcr.io/${PROJECT_ID}/paindumonde-django-app:${COMMIT_SHA}
         EOF
 
         kubectl patch --local -o yaml \
-          -f kubernetes/deployments/pipeline.yaml \
+          -f kubernetes/deployments/app-deployment.yaml \
           -p "$(cat patch.yaml)" \
           > pipeline.yaml
 
-        mv pipeline.yaml kubernetes/deployments/pipeline.yaml
+        mv pipeline.yaml kubernetes/deployments/app-deployment.yaml
 
-        hub add kubernetes/deployments/pipeline.yaml
+        hub add kubernetes/deployments/app-deployment.yaml
               
         hub commit -F- <<EOF
-        Update the pipeline-application
+        Update the paindumonde-application
 
-        This commit updates the pipeline deployment container image to:
+        This commit updates the app deployment container image to:
 
-            gcr.io/${PROJECT_ID}/pipeline:${COMMIT_SHA}.
+            gcr.io/${PROJECT_ID}/paindumonde-django-app:${COMMIT_SHA}.
 
         Build ID: ${BUILD_ID}
         EOF
@@ -110,4 +110,4 @@ steps:
         path: /kube
 
 images:
-  - 'gcr.io/${PROJECT_ID}/pipeline:${COMMIT_SHA}'
+  - 'gcr.io/${PROJECT_ID}/paindumonde-django-app:${COMMIT_SHA}'

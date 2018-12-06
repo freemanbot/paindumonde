@@ -6,14 +6,14 @@ metadata:
     kompose.version: 1.17.0 (a74acad)
   creationTimestamp: null
   labels:
-    io.kompose.service: elasticsearch
-  name: elasticsearch
+    io.kompose.service: db
+  name: db
 spec:
   ports:
-  - name: "9200"
-    port: 9200
-    targetPort: 9200
+  # - name: "5432"
+    port: 5432
+    # targetPort: 5432
   selector:
-    io.kompose.service: elasticsearch
+    io.kompose.service: db
 status:
   loadBalancer: {}
