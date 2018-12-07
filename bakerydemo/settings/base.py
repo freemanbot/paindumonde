@@ -65,6 +65,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+
+    'wagtail.contrib.postgres_search',
 ]
 
 MIDDLEWARE = [
@@ -172,10 +174,13 @@ MEDIA_URL = '/media/'
 # Override in local settings or replace with your own key. Please don't use our demo key in production!
 GOOGLE_MAP_API_KEY = 'AIzaSyD31CT9P9KxvNUJOwDq2kcFEIG8ADgaFgw'
 
-# Use Elasticsearch as the search backend for extra performance and better search results
+# Use PostgreSQL as the search backend for extra performance and better search results
+# My site has way less pages than 1 milion pages
 WAGTAILSEARCH_BACKENDS = {
     'default': {
-        'BACKEND': 'wagtail.search.backends.db',
+        # 'BACKEND': 'wagtail.search.backends.db',
+        'BACKEND': 'wagtail.contrib.postgres_search.backend',
+        'SEARCH_CONFIG': 'french',
         'INDEX': 'bakerydemo',
     },
 }
