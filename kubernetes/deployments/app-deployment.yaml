@@ -1,17 +1,17 @@
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: django-pv-claim
-  labels:
-    app: app
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
----
+# ---
+# apiVersion: v1
+# kind: PersistentVolumeClaim
+# metadata:
+#   name: django-pv-claim
+#   labels:
+#     app: app
+# spec:
+#   accessModes:
+#     - ReadWriteMany
+#   resources:
+#     requests:
+#       storage: 1Gi
+# ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -39,21 +39,17 @@ spec:
           value: postgres://app_user:changeme@db/app_db
         - name: DJANGO_SECRET_KEY
           value: changeme
-        - name: ELASTICSEARCH_PORT
-          value: "9200"
-        - name: ELASTICSEARCH_ENDPOINT
-          value: elasticsearch
         image: paindumonde-django-app:tag
         name: app
         ports:
         - containerPort: 8000
           name: app
-        volumeMounts:
-        - name: django-persistent-storage
-          mountPath: /data
+        # volumeMounts:
+        # - name: django-persistent-storage
+        #   mountPath: /media
         resources: {}
       restartPolicy: Always
-      volumes:
-      - name: django-persistent-storage
-        persistentVolumeClaim:
-          claimName: django-pv-claim
+      # volumes:
+      # - name: django-persistent-storage
+      #   persistentVolumeClaim:
+      #     claimName: django-pv-claim
