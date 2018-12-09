@@ -109,6 +109,7 @@ WSGI_APPLICATION = 'bakerydemo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bakerydemodb',
     }
 }
 
@@ -187,3 +188,9 @@ WAGTAILSEARCH_BACKENDS = {
 
 # Wagtail settings
 WAGTAIL_SITE_NAME = "bakerydemo"
+WAGTAIL_ADMIN_URL = "HhLbj3wR77ts9rh2jU4GqW8q"
+
+# ADMIN
+# ------------------------------------------------------------------------------
+# Django Admin URL.
+ADMIN_URL = 'django-admin/'

@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.conf.urls import include, url
 from django.conf import settings
 from django.contrib import admin
@@ -6,12 +7,15 @@ from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
 from wagtail.contrib.sitemaps.views import sitemap
 from wagtail.core import urls as wagtail_urls
+# from wagtail.images.views.serve import ServeView
+
 
 from bakerydemo.search import views as search_views
 from .api import api_router
 
 urlpatterns = [
-    url(r'^django-admin/', admin.site.urls),
+    # url(r'^django-admin/', admin.site.urls),
+    url(settings.ADMIN_URL, admin.site.urls),
 
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
@@ -20,6 +24,11 @@ urlpatterns = [
 
     url('^sitemap\.xml$', sitemap),
     url(r'^api/v2/', api_router.urls),
+
+    # Making the view redirect instead of serve
+    # see:
+    # http://docs.wagtail.io/en/v2.3/advanced_topics/images/image_serve_view.html
+    # url(r'^images/([^/]*)/(\d*)/([^/]*)/[^/]*$', ServeView.as_view(action='redirect'), name='wagtailimages_serve'),
 ]
 
 
@@ -39,7 +48,6 @@ if settings.DEBUG:
                 )
             )
     ]
-
     # Add views for testing 404 and 500 templates
     urlpatterns += [
         url(r'^test404/$', TemplateView.as_view(template_name='404.html')),

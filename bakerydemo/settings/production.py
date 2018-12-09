@@ -115,3 +115,8 @@ LOGGING = {
         },
     },
 }
+
+# ADMIN
+# ------------------------------------------------------------------------------
+# Django Admin URL regex.
+ADMIN_URL = os.getenv('DJANGO_ADMIN_URL', 'admin')
