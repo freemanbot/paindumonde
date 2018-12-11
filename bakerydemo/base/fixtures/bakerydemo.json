@@ -51,7 +51,7 @@
   "pk": 1,
   "fields": {
     "sort_order": 0,
-    "label": "Subject",
+    "label": "Sujet",
     "field_type": "singleline",
     "required": true,
     "choices": "",
@@ -65,7 +65,7 @@
   "pk": 2,
   "fields": {
     "sort_order": 1,
-    "label": "Your Name",
+    "label": "Votre nom",
     "field_type": "singleline",
     "required": true,
     "choices": "",
@@ -79,7 +79,7 @@
   "pk": 3,
   "fields": {
     "sort_order": 2,
-    "label": "Your Email",
+    "label": "Votre Email",
     "field_type": "email",
     "required": true,
     "choices": "",
@@ -93,7 +93,7 @@
   "pk": 4,
   "fields": {
     "sort_order": 3,
-    "label": "Purpose",
+    "label": "La raison",
     "field_type": "dropdown",
     "required": true,
     "choices": "Comment, Question, Feedback",
@@ -107,12 +107,12 @@
   "pk": 5,
   "fields": {
     "sort_order": 4,
-    "label": "Body",
+    "label": "Contenu",
     "field_type": "multiline",
     "required": true,
     "choices": "",
     "default_value": "",
-    "help_text": "What's on your mind?",
+    "help_text": "Tout ce que vous passe par la t\u00eate",
     "page": 69
   }
 },
@@ -1428,8 +1428,8 @@
   "model": "auth.user",
   "pk": 3,
   "fields": {
-    "password": "pbkdf2_sha256$30000$eIoVnauBvLhA$aPWJSlHK+F/rW7SKunxJ/RnXNQHx0uh6K/kVRyPn0XY=",
-    "last_login": "2017-04-23T19:58:19.460Z",
+    "password": "pbkdf2_sha256$120000$GN2optk3Ud50$Rskgz8y102zIcB10KdhdjMXr6P96wNI252zEv3wqEsw=",
+    "last_login": "2018-12-11T10:39:14.571Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "Admin",
@@ -1440,6 +1440,1098 @@
     "date_joined": "2017-02-17T07:37:53.700Z",
     "groups": [],
     "user_permissions": []
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 1,
+  "fields": {
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "object_id": "1",
+    "autocomplete": "'root':1B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 2,
+  "fields": {
+    "content_type": [
+      "base",
+      "people"
+    ],
+    "object_id": "1",
+    "autocomplete": "",
+    "body": "'johnson':2 'robert':1"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 3,
+  "fields": {
+    "content_type": [
+      "base",
+      "people"
+    ],
+    "object_id": "2",
+    "autocomplete": "",
+    "body": "'howling':1 'wolf':2"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 4,
+  "fields": {
+    "content_type": [
+      "base",
+      "people"
+    ],
+    "object_id": "3",
+    "autocomplete": "",
+    "body": "'hopkin':2 'lightning':1"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 5,
+  "fields": {
+    "content_type": [
+      "base",
+      "people"
+    ],
+    "object_id": "4",
+    "autocomplete": "",
+    "body": "'muddy':1 'water':2"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 7,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "8",
+    "autocomplete": "'johnson':2A 'robert':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 8,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "9",
+    "autocomplete": "'1':2A 'bread':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 9,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "10",
+    "autocomplete": "'2':2A 'bread':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 10,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "11",
+    "autocomplete": "'3':2A 'bread':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 11,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "12",
+    "autocomplete": "'4':2A 'bread':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 12,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "14",
+    "autocomplete": "'5':2A 'bread':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 13,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "15",
+    "autocomplete": "'6':2A 'bread':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 14,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "21",
+    "autocomplete": "'yeast':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 15,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "22",
+    "autocomplete": "'bedouin':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 16,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "23",
+    "autocomplete": "'olandshvedebrod':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 17,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "24",
+    "autocomplete": "'bread':2A 'sod':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 18,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "25",
+    "autocomplete": "'bread':2A 'sandwich':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 19,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "26",
+    "autocomplete": "'anadam':1A 'bread':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 20,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "28",
+    "autocomplete": "'appam':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 21,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "29",
+    "autocomplete": "'arep':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 22,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "30",
+    "autocomplete": "'bagel':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 23,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "31",
+    "autocomplete": "'baguet':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 24,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "32",
+    "autocomplete": "'bamm':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 25,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "33",
+    "autocomplete": "'bazin':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 26,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "34",
+    "autocomplete": "'bunanpankator':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 27,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "35",
+    "autocomplete": "'belgian':1A 'waffl':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 28,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "36",
+    "autocomplete": "'afghan':1A 'bolan':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 29,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "37",
+    "autocomplete": "'bread':2A 'misc':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 30,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "39",
+    "autocomplete": "'bread':2A 'rye':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 31,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "40",
+    "autocomplete": "'bhakr':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 32,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "41",
+    "autocomplete": "'crew':2A 'sprint':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 33,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "42",
+    "autocomplete": "'baking':1A 'sod':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 34,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "43",
+    "autocomplete": "'boston':1A 'cream':2A 'pi':3A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 35,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "44",
+    "autocomplete": "'aevar':3A 'by':2A 'gudmundsson':4A 'imag':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 36,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "45",
+    "autocomplete": "'by':2A 'imag':1A 'sverr':3A 'thorolfsson':4A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 37,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "46",
+    "autocomplete": "'descending':2A 'glaci':1A 'hof':4A 'near':3A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 38,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "47",
+    "autocomplete": "'abov':3A 'building':2A 'old':1A 'vik':4A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 39,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "48",
+    "autocomplete": "'abov':3A 'from':2A 'hofn':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 40,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "49",
+    "autocomplete": "'arkran':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 41,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "51",
+    "autocomplete": "'muddy':1A 'water':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 42,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "52",
+    "autocomplete": "'howlin':1A 'wolf':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 43,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "53",
+    "autocomplete": "'hopkin':2A 'lightnin':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 44,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationpage"
+    ],
+    "object_id": "64",
+    "autocomplete": "'hof':1B",
+    "body": "'2':2 '785':4 'apple':184 'bar':8,16,130 'bean':75,158 'bear':84,89,191,236 'biscuit':17,223 'bonbon':101 'cak':34,40,45,56,83,90,100,143,164,167,182,186,188,216,227,228,239 'can':37,243 'candy':36,38,58,70,72,81,128,147,148,154,176,194,205,222,242 'caramel':18,60,68,110,174,213 'carrot':44 'chocolat':7,15,39,43,53,55,99,129,163,187,198,218,226,238 'chup':12,13,103,104,111,112,119,120,124,125,170,171,189,190,224,225 'claw':85,192,237 'cook':20 'cotton':57,71,80,146,153,175,193,204 'cream':208,221 'croiss':49 'cupcak':86,105,235 'danish':229 'dessert':118,137,169 'donut':52,203 'drage':107,168,202 'drop':66 'fruitcak':116,140,165 'gingerbread':73,211 'gumm':31,88,144,210 'h3':96 'halvah':46 'hof':1 'i':9,22,27,41,47,50,63,155,159,161,195,200,232,240 'ice':207,220 'iceland':6 'icing':33,102,109 'jelly':74,77,135,139,157,178 'jelly-o':76,134,177 'jujub':29,141,206 'laekjarhus':3 'lemon':65 'liquoric':219 'lollipop':19 'lov':10,23,28,42,48,51,64,156,160,162,196,201,233,241 'macaroon':21,30,138,217,234 'marshmallow':142,197,209 'marzipan':11,172,212 'mor':95 'muffin':97,114,152 'nev':91 'no':93 'o':78,136,179 'oat':166 'oraef':5 'pastry':35,87,115,117,149 'pi':61,173,180,185 'plum':122 'powd':150 'pudding':25,32,69,106 'roll':127,215 'say':92 'sesam':132,230 'snap':133,231 'souffl':14,59,82,108,131,145,183 'sugar':121 'sweet':54,113,181,199 'tart':24 'tiramisu':62,79 'to':94 'toots':126,214 'topping':26,67,151 'waf':98,123"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 45,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationpage"
+    ],
+    "object_id": "65",
+    "autocomplete": "'reykjavik':1B",
+    "body": "'101':3 '36':2 'apple':73 'bar':44,140,152 'bean':111,154 'bear':54,66,116 'biscuit':13,57 'bonbon':42,72 'cak':10,60,78,102,133,159 'can':50,56,104 'candy':49,55,87,103,131 'caramel':45,82 'cheesecak':108 'chocolat':43,101,128,139,151,158 'chup':29,30,96,97 'cook':33,144,146 'cotton':86,130 'cream':85,100,114,120 'dessert':14,95 'donut':46 'drage':98 'drop':38,64,68,135 'fruitcak':39 'gingerbread':6 'gumm':17,53,65,77,115,155 'halvah':61 'ice':84,99,113,119 'iceland':5 'jelly':26,89,110,132,142,153 'jelly-o':25,88,141 'jujub':7,19,51,126,156 'laugavegur':1 'lemon':37,63,67,134 'liquoric':41,112,124 'lollipop':9,22,71,117,127,136 'macaroon':21,34,40 'marzipan':31 'o':27,90,143 'oat':59 'pastry':47,58,62,148 'pi':74,121 'plum':76,94,106,150 'powd':20,52,69 'pudding':8,12,18,107 'reykjavik':4 'roll':16,24,36,81,92,123,138 'souffl':79 'sugar':75,93,105,149 'sweet':11,15,23,80,91,122,157 'tart':32,70,109 'tiramisu':28,118,125,129 'toffe':83,147 'toots':35,137 'waf':48,145"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 46,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationpage"
+    ],
+    "object_id": "66",
+    "autocomplete": "'vik':1B",
+    "body": "'1':2 '870':3 'amet':10 'apple':49,147 'bar':33,81,117 'bean':60,110,146 'bear':12,63,85 'biscuit':156,157 'bonbon':18,97 'brown':151 'cak':11,41,42,43,91,112,123,130,135,144 'can':138 'candy':104,119,129,137 'caramel':57,152 'carrot':40,134 'cheesecak':14,51,70,82 'chocolat':32,56,71,77,80,111,116 'chup':153,154 'claw':13 'cook':38 'cotton':118,128 'cream':150 'croiss':158 'cupcak':6,29,34,58,66,100,106,107,139 'danish':35 'dessert':115 'dolor':8 'donut':16,37,132 'drage':22,67 'drop':74,76,114 'fruitcak':64,105,159 'gingerbread':31,65,131 'gumm':25,62,84,127 'h3':55 'ice':149 'iceland':5 'icing':61,96,121 'ipsum':7 'jelly':59,72,109,145 'jujub':30 'klettsveg':1 'lemon':73,75,113 'macaroon':24,44,92,133 'marshmallow':15,125 'marzipan':48,141,155 'muffin':36,45 'now':52 'oat':122,143 'pastry':120,160,161 'pi':50,90,136,148 'plum':94 'powd':140 'roll':20,27,69,99 'sesam':46,78,87,101 'sit':9 'snap':47,79,88,102 'souffl':39,108 'sugar':54,93 'sweet':23,86,98,142 'tiramisu':21,83 'toffe':28,95,103 'toots':19,26,68 'topping':17,126 'vik':4 'waf':89,124 'with':53"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 47,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationpage"
+    ],
+    "object_id": "67",
+    "autocomplete": "'selfoss':1B",
+    "body": "'800':2 'an':149 'apple':169 'awesom':150 'bar':29,121,136,191 'bean':23,52,74,162,168,199 'bear':57 'biscuit':133 'bonbon':24,70,173 'brown':111,141,153,189 'cak':47,66,75,78,81,84,93,95,113,131,138,144,159,175,193 'can':13,64,90,203 'candy':10,12,63,89,99,107,172,177,202 'caramel':148 'carrot':65,77,80,158,174 'cheesecak':94,132,146,160 'chocolat':28,43,59,92,112,120,130,135,186,190,205,206,208 'chup':49,50,60,61 'cook':19,42,97,118,194,207,209,210 'cotton':106 'cream':69 'croiss':20,67 'cupcak':45,85 'danish':27,179 'drage':119 'drop':115 'eyravegur':1 'fruitcak':9,38,142 'gingerbread':53,163,171 'gumm':48,56,58,79,178 'h3':152 'halvah':98 'heading':151 'ice':68 'iceland':4 'icing':145 'jelly':6,22,51,62,73,87,125,161,167,184,198 'jelly-o':5,86,124,183 'jujub':41,129,201 'lemon':114 'liquoric':127,147,197 'lollipop':34,96,164 'macaroon':14,82,91 'marshmallow':11,15,16,134,155,165 'marzipan':8,31,154 'o':7,88,126,185 'oat':137,143,192 'pastry':176,188 'pi':170 'plum':72,102,123,196 'pudding':30,46,157,180,211 'roll':33,40,117 'selfoss':3 'sesam':17,25,35,54,104,109 'snap':18,26,36,55,105,110 'souffl':37,140 'sugar':71,101,122,195 'sweet':116,200,204 'tart':156,182,213 'tiramisu':76,166 'toffe':128,212 'toots':32,39 'topping':44,100,103,108,181 'waf':21,83,139,187"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 48,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationpage"
+    ],
+    "object_id": "78",
+    "autocomplete": "'hofn':1B",
+    "body": "'780':2 'apple':74 'bar':45,141,153 'bean':112,155 'bear':55,67,117 'biscuit':14,58 'bonbon':43,73 'cak':11,61,79,103,134,160 'can':51,57,105 'candy':50,56,88,104,132 'caramel':46,83 'cheesecak':109 'chocolat':44,102,129,140,152,159 'chup':30,31,97,98 'cook':34,145,147 'cotton':87,131 'cream':86,101,115,121 'dessert':15,96 'donut':47 'drage':99 'drop':39,65,69,136 'fruitcak':40 'gingerbread':7 'gumm':18,54,66,78,116,156 'hafnarbraut':1 'halvah':62 'hofn':3 'hornafird':5 'i':4 'ice':85,100,114,120 'iceland':6 'jelly':27,90,111,133,143,154 'jelly-o':26,89,142 'jujub':8,20,52,127,157 'lemon':38,64,68,135 'liquoric':42,113,125 'lollipop':10,23,72,118,128,137 'macaroon':22,35,41 'marzipan':32 'o':28,91,144 'oat':60 'pastry':48,59,63,149 'pi':75,122 'plum':77,95,107,151 'powd':21,53,70 'pudding':9,13,19,108 'roll':17,25,37,82,93,124,139 'souffl':80 'sugar':76,94,106,150 'sweet':12,16,24,81,92,123,158 'tart':33,71,110 'tiramisu':29,119,126,130 'toffe':84,148 'toots':36,138 'waf':49,146"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 49,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationpage"
+    ],
+    "object_id": "79",
+    "autocomplete": "'akran':1B",
+    "body": "'300':3 '43':2 'akran':4 'apple':73 'bar':44,140,152 'bean':111,154 'bear':54,66,116 'biscuit':13,57 'bonbon':42,72 'cak':10,60,78,102,133,159 'can':50,56,104 'candy':49,55,87,103,131 'caramel':45,82 'cheesecak':108 'chocolat':43,101,128,139,151,158 'chup':29,30,96,97 'cook':33,144,146 'cotton':86,130 'cream':85,100,114,120 'dessert':14,95 'donut':46 'drage':98 'drop':38,64,68,135 'fruitcak':39 'gingerbread':6 'gumm':17,53,65,77,115,155 'halvah':61 'ice':84,99,113,119 'iceland':5 'jelly':26,89,110,132,142,153 'jelly-o':25,88,141 'jujub':7,19,51,126,156 'lemon':37,63,67,134 'liquoric':41,112,124 'lollipop':9,22,71,117,127,136 'macaroon':21,34,40 'marzipan':31 'o':27,90,143 'oat':59 'pastry':47,58,62,148 'pi':74,121 'plum':76,94,106,150 'powd':20,52,69 'pudding':8,12,18,107 'roll':16,24,36,81,92,123,138 'skagabraut':1 'souffl':79 'sugar':75,93,105,149 'sweet':11,15,23,80,91,122,157 'tart':32,70,109 'tiramisu':28,118,125,129 'toffe':83,147 'toots':35,137 'waf':48,145"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 50,
+  "fields": {
+    "content_type": [
+      "locations",
+      "locationsindexpage"
+    ],
+    "object_id": "63",
+    "autocomplete": "'locat':1B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 51,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadsindexpage"
+    ],
+    "object_id": "3",
+    "autocomplete": "'le':1B 'pain':2B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 52,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "34",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 53,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "35",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 54,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "36",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 55,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "37",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 56,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "39",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 57,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "40",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 58,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "42",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 59,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "49",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 60,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "53",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 61,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "57",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 62,
+  "fields": {
+    "content_type": [
+      "breads",
+      "breadpage"
+    ],
+    "object_id": "59",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 63,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogindexpage"
+    ],
+    "object_id": "61",
+    "autocomplete": "",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 64,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "object_id": "62",
+    "autocomplete": "",
+    "body": "'-4':94 '1':27,33,41 '10':272 '11':302 '12':334 '2':34 '3':35,93 '4':47 '40':104 '5':57 '500':28 '6':81 '7':108 '8':200 '9':242 'a':204,284,297 'ability':63 'about':231 'ago':25 'albican':250 'alcohol':181,196 'alcoholic':198 'all':43 'also':203 'although':98 'ancestor':56 'and':26,89,115,180,194,214,238,254,273,320 'are':2,30,37,49,159,251,328 'ascomycot':319,338 'asexually':112 'asymmetric':121 'baking':193 'basidiomycot':322 'be':139 'been':190,263 'beverag':199 'biofuel':278 'biology':212,233,241 'both':151 'budding':73,126,324 'but':303 'by':68,113,119,168,311 'called':160 'can':101,138,149,255 'candid':249 'carbohydrat':176 'carbon':178,187 'caus':256 'cel':74,211,237,271 'celled':6,135 'centrally':205 'cerevisia':174,301 'characteristic':67 'classified':8,329 'common':342 'condit':158 'connected':72 'constitut':40 'contrast':127 'contrasted':140 'convert':175 'creativ':341 'currently':31 'depending':86,153 'described':44 'develop':65 'diamet':97 'dimorphic':161,163 'dioxid':179,188 'diversity':306 'divis':122 'do':117,281 'electricity':267 'environment':90 'estimated':38 'ethanol':275 'eukaryotic':3,222,236 'evolved':53 'fals':79 'ferment':169 'for':182,276,299 'form':152,167,283 'forming':69 'from':54 'fuel':270 'fung':162 'fungal':45,146 'fungus':13 'gath':229 'generat':266 'greatly':85 'grouping':289 'grow':102,144 'growth':136 'hab':137 'has':189 'hav':225,261 'having':61,165 'human':240,259 'hundred':20 'hypha':80,145 'identified':32 'import':206 'in':96,106,192,197,209,258,268,314,330 'industry':279 'infect':257 'inform':230 'is':202,215,293,309 'it':201,227 'kingdom':14 'known':75,124 'lineag':17 'many':116 'mean':164 'measuring':92 'member':10 'microbial':269 'microorganism':7,223 'million':22 'mitos':114 'model':207 'modern':210 'mold':129,142 'most':109,219 'multicellular':55,66 'not':282 'of':11,21,23,42,71,184,217,234,245,307 'often':294 'one':216 'opportunistic':252 'or':78,156,287 'order':332 'organism':51,208 'originated':19 'other':157,243 'pathogen':253 'phyl':317 'phylogenetic':288,305 'phylum':337 'plac':313 'process':123 'produc':274 'pseudohypha':77 'raised':339 'recently':262 'reproduc':111 'research':213 'researched':221 'researcher':224 'saccharomyc':173,300 'saccharomycetal':333 'separat':316 'shown':310 'singl':5,134,285 'single-celled':4,133 'siz':83,107 'so':118 'som':59,99 'spec':29,46,60,88,147,172,244 'string':70 'such':247 'synonym':298 'tak':150 'taken':295 'taxonomic':286 'temperatur':155 'term':291 'that':148 'the':12,15,62,120,170,186,195,218,232,235,277,290,304,318,321,323,331,336 'their':132,312 'they':36 'thoroughly':220 'thousand':183 'to':39,64,103,177,228,265 'tru':326 'two':166,315 'typically':91 'ultimately':239 'um':95,105 'unicellular':50 'used':191,226,264 'vary':84 'which':18,52,143 'with':58,128,131,141 'within':335 'year':24,185 'yeast':1,16,48,82,100,110,130,171,246,260,280,292,308,325,327 'yummy':340"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 65,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "object_id": "68",
+    "autocomplete": "",
+    "body": "'2':37 'a':29,34,46,77,130,144,158,165,169 'after':57 'an':151 'and':11,23,33,88,103,108,133,153 'are':143 'art':126 'at':96 'automated':119 'bak':170 'baked':26,139,162 'baker':107 'baking':38,60,91,117,128 'barbecu':48 'barbecuing':64 'batter':22 'be':40 'becaus':65,84 'been':94 'both':52,149 'bread':12,81,142 'but':146 'by':50,98,104,120 'cak':9 'called':168 'can':39 'centr':15,36 'combined':41 'common':83,145 'concept':67 'consumpt':102,112 'cook':10 'creativ':82 'crust':32 'cultural':154 'domestic':101 'dough':24 'dry':31 'economic':152 'especially':141 'factor':124 'familial':89 'firm':30 'food':148 'for':100,110,136 'from':5,150 'fundamental':131 'good':27,140,163 'gradually':3 'grilling':43 'has':92 'heat':1,17 'historical':86 'hom':97 'hybrid':47 'import':135,147 'in':106,122 'industrialized':116 'into':25 'is':2,61,72,134,167 'it':20 'larg':123 'local':111 'machin':121 'masonry':70 'men':105 'method':53 'nutrit':137 'of':8,68,76,85,127,156 'one':56 'or':55 'other':59 'oven':71 'performed':95 'person':159 'pit':79 'point':155 'prepar':161 'produc':45 'product':114 'profess':166 'related':62 'remain':129 'restaur':109 'rol':90 'similar':73 'simultaneously':54 'skill':132 'smok':78 'social':87 'sod':80 'soft':35 'surfac':7 'that':75 'the':6,58,66,69,125 'their':14 'through':19 'to':13,44,63,74 'traditionally':93 'transferred':4 'transform':21 'travel':18 'using':51 'vari':49 'view':157 'was':115,118 'when':113 'who':160 'with':28,42 'women':99"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 66,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "object_id": "72",
+    "autocomplete": "",
+    "body": "'-400':283 '1000':479 '1050':27 '1800':137,220 '18th':363 '19th':379,413 '200':129,188,282 '20th':57 '3900':104,135 '4':128 '400':259 '500':25,222 '8900':102 'a':168,213,339,358,435,450,462,472 'ad':26,28,189,223,260,284,480 'added':165 'again':70 'age':24,186,219 'agricultur':140 'alphabetic':495 'also':43 'an':313,429 'and':10,16,39,66,73,96,121,152,170,225,239,252,344,399,423,457,466,481,485,501,518 'apparently':155,270 'archaeological':83 'are':12,18,68,77,159,179,194,375,459,492,509 'army':281 'around':258,478 'asid':427 'at':126 'baked':171,394,469 'baking':158,249,261,272 'barley':9,38,143,401,408 'bc':103,105,130,136,138,221 'be':370 'becam':30 'becom':418 'been':118,212,233,298 'began':416 'beginning':54 'being':71,78 'below':490 'both':513 'bread':50,75,113,178,205,256,316,325,346,352,367,386,392,402,424,437,476,486,507 'bread-making':112 'breakfast':444 'bronz':218 'burial':182,214 'but':115 'by':37 'cam':390 'can':369 'carbohydrat':433 'central':196 'centrepiec':420,463 'century':58,364,380,414 'ceramic':153 'cereal':116,162 'certain':202 'christian':310 'citat':307 'common':264,471 'commonly':33,46,236 'contemporary':483,515 'continent':306 'cooked':120 'could':209 'countr':8,330,351,491 'creativ':263,470 'crisp':391 'crispy':400 'crushed':119 'cultivated':72 'cultural':340 'culturally':317 'denmark':86,497 'developed':79 'different':366 'dinner':467 'direct':109 'dominated':4,387,410 'dough':169 'during':21,98,131,216,411 'early':309 'eastern':333 'eaten':207 'einkorn':97 'emmer':65,95 'employed':299 'english':520 'evident':110 'extent':151 'extra':430 'far':405 'find':84 'finland':336,498 'first':243,255 'followed':36 'for':49,157,248,443,452 'found':160,371 'four':1,365 'fresh':468 'fried':173 'from':80,477 'function':442 'furth':388 'german':318 'gift':183,215 'given':511 'grain':2,35,48,61,82,238 'grav':187 'had':297 'hav':117,146,211,232,320 'high':301 'history':473 'hom':290 'howev':198 'iceland':499 'in':5,85,174,184,191,267,278,300,315,327,331,348,372,376,381,403,434,464,494,512,519 'indicat':87 'influenced':321 'innov':487 'interest':314 'introduced':142 'iron':23,185 'is':107,200,338,449,488 'it':199,208,440 'just':210 'key':441 'known':180 'languag':517 'lat':362,378 'learned':271 'least':127 'link':341 'loav':251,409 'lunch':465 'main':355 'mak':167 'making':114 'malardalen':193 'meal':359,422,436 'mercenar':277 'mesolithic':100 'mor':19 'most':32,45,235,322,453 'mostly':510 'moulded':161 'nam':504 'national':516 'needed':308 'neolithic':133 'new':74 'no':108 'nordic':7,329,350,374,454,475 'north':389,406 'norway':500 'not':201 'oat':17,40,224 'of':55,89,111,177,195,323,335,357,421,432,474,505 'older':60 'oldest':14 'once':69 'onward':190 'open':447 'or':172 'order':496 'oven':245 'over':148 'part':334,356 'peopl':455 'perhap':253 'period':101,134 'plat':154 'porridg':124 'potato':415,458 'presented':489,493 'probably':246,257 'promoted':312 'put':426 'real':244 'recent':20 'region':368 'retained':439 'roman':268,280 'russi':343 'rye':11,29,41,385,396 'sandwich':448 'scandinavian':265 'se':241 'seem':144,230 'served':122 'shap':176 'show':294 'sinc':125 'slavic':345 'small':250 'sod':262 'soft':384,407 'soldi':266 'som':150,482 'sourc':431 'south':383 'spec':94,228 'spelt':67,229 'start':451 'status':302 'still':438 'subsequently':286 'such':63 'sweden':197,502 'taken':147 'techniqu':273,289 'that':203,295 'the':6,13,22,31,44,53,56,90,99,132,175,192,217,226,234,242,254,279,288,305,324,328,332,349,354,361,373,377,382,404,412,419,446,503,506,514 'them':292 'then':397 'ther':106,337 'thes':81 'they':285,296 'thin':398 'this':204 'tim':269 'to':145,149,166,231,293,342,417 'today':59,456 'took':287 'tradit':311,319,347 'triticum':92,227 'two':91 'typ':3,62,76,326,484,508 'until':52,360 'up':51 'use':88 'used':34,47,156,237,247,460 'usually':393 'was':42,141,206,353,425 'wat':164 'we':240 'wheat':15,93 'when':139,274 'with':163,291,395 'work':303 'working':275"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 67,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "object_id": "73",
+    "autocomplete": "",
+    "body": "'19th':72 'aerated':65 'aeratus':63 'an':92 'analyzing':133 'and':7,25,36,78,96,126 'are':40,55 'around':157 'baked':82 'baking':19 'based':98,136 'been':5 'bi':87 'bic':54 'bicarb':47,48,51 'bicarbonat':26,35,37,50,77,80,89,114,149 'both':75 'bread':21,174 'carbonat':108,119,124,128 'century':73 'chemical':140 'co3':109 'coined':151 'colloquial':30 'com':90 'common':56,84,176 'composit':141 'cooking':23 'cornucopi':172 'creativ':83,175 'even':53 'exact':139 'for':74 'form':43 'fresh':81 'from':60,91 'half':160 'has':3,13 'in':29,70,88,112,122,164,167 'is':8,97,104,118,159 'it':2 'known':6 'latin':61 'long':4 'many':14 'meaning':64 'modern':130 'much':107,162 'na':169 'na2':171 'na2co3':125,168 'nahco3':115,165 'nam':16,33,147 'naming':94 'observ':101 'of':27,38,132,173 'often':41 'or':52 'other':127,155 'outdated':93 'per':110,120 'potassium':79 'prefix':86 'related':15 'sal':62 'saleratus':59 'salt':12,66 'say':152 'sinc':1 'situat':135 'sod':20,22,24,28,39,49 'sodium':34,46,76,111,113,121,123,148,163 'such':17,44 'system':95 'that':102 'the':11,32,57,71,85,100,129,134,138,146,154 'ther':103,117,158 'this':153 'truncated':42 'twic':105 'unknown':144 'usag':31 'used':10,69 'versus':170 'was':67,143,150 'way':131,156 'when':145 'which':142 'widely':9,68 'word':58"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 68,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "object_id": "74",
+    "autocomplete": "",
+    "body": "'1':263 '10':139,154,242 '11':162 '12':163 '13':184 '14':206 '15':222 '16':223 '17':305 '1930s':229 '4':46 '8':26 'a':33,43,54,89,93,96,159,189,204,269 'american':306 'and':16,30,42,59,65,70,73,104,124,224,260,267,288,294 'are':3,92,167 'balanced':55 'barbecuing':186 'be':21,50,77,213,280 'becom':81 'been':129,197 'belgian':109 'bread':2,19,41,48,63,103,114,126,141,153,166,195,211,241,252,256,259,265,270,275,308,325 'but':296 'cak':101 'called':271 'can':115 'carrot':100 'cleanly':27 'cold':286 'common':112 'consum':303 'consumer':247 'contemporary':244 'creation':173 'creativ':111 'cross':119 'cross-sectionally':118 'crumb':35,58 'crumbly':82 'crust':60 'cut':287 'dav':108 'demand':304 'derived':314 'described':130,198 'designed':51,78,133,168,278 'diet':97 'discontinued':299 'dried':84 'drip':72 'du':300 'easily':25 'egg':293 'enrich':323 'fat':313 'filling':67,290 'fin':34 'fing':145 'fir':205 'flour':219,221 'for':134,143,169,185,201 'formulated':22 'fre':209,218 'from':315 'gluten':208,217 'gluten-fre':207,216 'hamburger':295 'hardened':83 'has':128,196 'hav':32,53,86,309 'high':191 'high-quality':190 'historically':310 'hold':64 'holding':135 'i':98 'in':5,68,171,227,230,243 'included':311 'ingredient':226 'inner':38 'is':147,158 'it':297 'jim':107 'light':44 'loaf':161,237,262 'low':302 'luncheon':137 'many':6 'marketed':268 'may':20,31,49,76,212 'meat':138 'messiness':74 'milk':319 'mold':157 'multigrain':15 'must':94 'not':80 'of':40,57,174,177,188,318 'oil':321 'or':28,85,320 'other':17,225,289 'over':203 'pan':155 'part':39 'perfectly':132 'pi':106 'plac':69 'prepared':214 'preparing':144 'produced':4,266 'proport':56 'pumpkin':105 'quality':192 'reduc':71 'ref':116,249 'referred':149,238 'round':273,284 'round-shaped':283 'rye':14 'sandwich':1,18,47,113,146,152,160,165,178,183,194,210,236,258,261,274,307 'sectionally':120 'shaped':285 'slic':24 'sliced':122,240 'soft':37 'som':75,164,312 'sometim':148,248 'sourdough':13 'specific':175 'squar':121,136 'squishy':88 'stat':233 'submarin':182 'such':8,179,253,291 'suggest':99 'suitabl':200 'support':66 'teff':220 'term':235 'textur':45,90 'the':36,62,140,172,181,228,231,234,316,324 'tim':245 'to':23,52,79,117,150,239,250,279,301,322 'toasting':202 'too':87 'typ':176 'u.s':246 'uniformly':29 'united':232 'use':170,187,317 'used':142,281 'using':215 'variet':7 'veget':91 'waffl':110 'was':277,298 'wheat':12,125 'whereby':61 'which':127,276 'whit':10,123,193,251 'whol':11 'with':282 'wond':255,264,272 'zucchin':102"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 69,
+  "fields": {
+    "content_type": [
+      "blog",
+      "blogpage"
+    ],
+    "object_id": "77",
+    "autocomplete": "",
+    "body": "'1856':92 '1872':247 '1878':271 '1887':290 '19th':43 '2':14,221,272,295 '3':36,63,173,250 '4':93 '5':138 'a':8,12,52,55,60,95,117,187,213,228,239 'acquired':17 'almanac':249 'almond':130 'already':168 'and':10,22,30,114,131,162,196,212,234 'anoth':251 'appeared':244 'armenian':86 'armenian-french':85 'at':81,170 'bakery':175 'been':151 'book':268 'boston':71,75,258 'brushed':115 'butt':107 'by':84 'cak':9,21,48,62,100,109,148,166,179,192,224 'called':51,94 'central':174 'century':44 'chef':88 'cherry':240 'chocolat':56,96,136,214,229,292 'claim':72,143 'coated':122,134 'common':177 'companion':288 'confection':199,218 'consisted':101 'contemporaneous':158 'cook':267 'cooked':25 'cream':53,57,76,97,205,259,293 'created':80 'creativ':176 'crem':112,124 'custard':61,164,207 'custard-filled':163 'derived':182 'despit':1 'dessert':16 'disput':141 'earliest':274 'early':252 'eventually':208 'evident':159 'fact':7 'filled':110,165,193 'first':79,243 'fond':137 'for':202 'french':87,106 'from':183 'ganach':233 'glaz':215,230 'granit':264 'hav':150 'historian':140 'hotel':69,83 'hous':68 'howev':139 'in':6,26,37,70,91,245,262,270,283,289 'interchangeably':35 'iron':265 'is':5,155,180,225 'it':2,4,18,120,161 'jam':195,211 'kitchen':287 'known':275 'lai':190 'latt':39 'layer':104 'likely':181 'may':149 'methodist':248 'miss':284 'modern':279 'nam':3,19,242 'no':156 'not':11 'occurred':261 'of':41,47,65,102,105,160,206,255,277 'or':59,238 'overlain':126 'owner':64 'pan':29 'park':67 'parlo':285 'part':40 'pastry':204 'patissier':113,125 'pi':13,23,54,58,77,98,186,260,294 'popular':169 'powdered':236 'primacy':145 'printed':253,269,282 'recip':276 'replaced':209,216 'rum':118 'sam':28 'sanzian':90 'served':152 'sid':121 'sliced':129 'sometim':235 'specific':157 'spong':108 'such':231 'sugar':201,220,237 'syrup':119 'term':257 'that':73,171 'the':15,27,31,38,42,66,74,82,132,178,184,210,217,223,241,246,256,263,273,278 'then':153 'ther':154 'this':45,99,142,147 'tim':172 'to':144 'toasted':128 'today':222 'top':133 'topped':197,226 'two':103,189 'two-lai':188 'typ':46 'use':254 'used':34 'vari':280 'variously':50 'war':266 'was':49,78,167,281 'washington':185 'wer':24,33 'when':20 'which':203 'whil':146 'with':111,116,123,127,135,194,198,227 'word':32 'yellow':191"
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 70,
+  "fields": {
+    "content_type": [
+      "base",
+      "formpage"
+    ],
+    "object_id": "69",
+    "autocomplete": "'contact':2B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 71,
+  "fields": {
+    "content_type": [
+      "base",
+      "gallerypage"
+    ],
+    "object_id": "70",
+    "autocomplete": "'galler':1B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 72,
+  "fields": {
+    "content_type": [
+      "base",
+      "homepage"
+    ],
+    "object_id": "60",
+    "autocomplete": "'bienvenu':1B 'chez':2B 'mond':6B 'pain':4B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 73,
+  "fields": {
+    "content_type": [
+      "base",
+      "standardpage"
+    ],
+    "object_id": "76",
+    "autocomplete": "'about':1B",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 90,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "54",
+    "autocomplete": "'boutiqu':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 101,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "55",
+    "autocomplete": "'boutiqu':1A 'fac':3A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 102,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "56",
+    "autocomplete": "'baguet':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 103,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "57",
+    "autocomplete": "'baguet':2A 'prepar':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 104,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "58",
+    "autocomplete": "'pain':1A 'tradit':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 106,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "60",
+    "autocomplete": "'ancien':2A 'pain':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 107,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "61",
+    "autocomplete": "'grop':1A 'pain':2A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 108,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "62",
+    "autocomplete": "'1':2A 'prepar':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 109,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "63",
+    "autocomplete": "'petrissag':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 110,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "64",
+    "autocomplete": "'baguet':1A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 111,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "65",
+    "autocomplete": "'pain':1A 'raisin':3A",
+    "body": ""
+  }
+},
+{
+  "model": "postgres_search.indexentry",
+  "pk": 112,
+  "fields": {
+    "content_type": [
+      "wagtailimages",
+      "image"
+    ],
+    "object_id": "66",
+    "autocomplete": "'grain':1A",
+    "body": ""
   }
 },
 {
@@ -1534,7 +2626,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": null,
-    "latest_revision_created_at": null
+    "last_published_at": null,
+    "latest_revision_created_at": null,
+    "live_revision": null
   }
 },
 {
@@ -1544,16 +2638,16 @@
     "path": "000100020001",
     "depth": 3,
     "numchild": 11,
-    "title": "Breads",
-    "draft_title": "Breads",
-    "slug": "breads",
+    "title": "Les Pains",
+    "draft_title": "Les Pains",
+    "slug": "pains",
     "content_type": [
       "breads",
       "breadsindexpage"
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/",
+    "url_path": "/home/pains/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": true,
@@ -1563,7 +2657,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T11:34:11.560Z",
-    "latest_revision_created_at": "2017-03-22T06:54:24.677Z"
+    "last_published_at": "2018-12-11T10:41:52.274Z",
+    "latest_revision_created_at": "2018-12-11T10:41:52.205Z",
+    "live_revision": 3
   }
 },
 {
@@ -1582,7 +2678,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/anadama-bread/",
+    "url_path": "/home/pains/anadama-bread/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1592,7 +2688,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:21.882Z",
-    "latest_revision_created_at": "2017-02-25T08:27:47.625Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-25T08:27:47.625Z",
+    "live_revision": null
   }
 },
 {
@@ -1611,7 +2709,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/anpan/",
+    "url_path": "/home/pains/anpan/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1621,7 +2719,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:21.931Z",
-    "latest_revision_created_at": "2017-02-23T08:31:07.640Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:31:07.640Z",
+    "live_revision": null
   }
 },
 {
@@ -1640,7 +2740,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/appam-hoppers/",
+    "url_path": "/home/pains/appam-hoppers/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1650,7 +2750,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:21.980Z",
-    "latest_revision_created_at": "2017-02-23T08:14:23.196Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:14:23.196Z",
+    "live_revision": null
   }
 },
 {
@@ -1669,7 +2771,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/arepa/",
+    "url_path": "/home/pains/arepa/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1679,7 +2781,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:22.029Z",
-    "latest_revision_created_at": "2017-02-23T08:10:31.068Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:10:31.068Z",
+    "live_revision": null
   }
 },
 {
@@ -1698,7 +2802,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/bagel/",
+    "url_path": "/home/pains/bagel/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1708,7 +2812,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:22.127Z",
-    "latest_revision_created_at": "2017-02-23T08:01:54.867Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:01:54.867Z",
+    "live_revision": null
   }
 },
 {
@@ -1727,7 +2833,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/baguette-french-stick-french-bread/",
+    "url_path": "/home/pains/baguette-french-stick-french-bread/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1737,7 +2843,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:22.180Z",
-    "latest_revision_created_at": "2017-02-23T08:04:51.407Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:04:51.407Z",
+    "live_revision": null
   }
 },
 {
@@ -1756,7 +2864,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/bammy/",
+    "url_path": "/home/pains/bammy/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1766,7 +2874,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:22.274Z",
-    "latest_revision_created_at": "2017-02-23T08:01:15.242Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:01:15.242Z",
+    "live_revision": null
   }
 },
 {
@@ -1785,7 +2895,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/bazin/",
+    "url_path": "/home/pains/bazin/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1795,7 +2905,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:22.655Z",
-    "latest_revision_created_at": "2017-02-23T08:28:25.337Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:28:25.337Z",
+    "live_revision": null
   }
 },
 {
@@ -1814,7 +2926,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/bhakri/",
+    "url_path": "/home/pains/bhakri/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1824,7 +2936,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:22.866Z",
-    "latest_revision_created_at": "2017-02-23T08:26:10.026Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:26:10.026Z",
+    "live_revision": null
   }
 },
 {
@@ -1843,7 +2957,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/black-bread/",
+    "url_path": "/home/pains/black-bread/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1853,7 +2967,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:23.065Z",
-    "latest_revision_created_at": "2017-02-23T08:20:09.645Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:20:09.645Z",
+    "live_revision": null
   }
 },
 {
@@ -1872,7 +2988,7 @@
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/breads/bolani/",
+    "url_path": "/home/pains/bolani/",
     "owner": null,
     "seo_title": "",
     "show_in_menus": false,
@@ -1882,7 +2998,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T13:00:23.169Z",
-    "latest_revision_created_at": "2017-02-23T08:08:39.568Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-02-23T08:08:39.568Z",
+    "live_revision": null
   }
 },
 {
@@ -1892,8 +3010,8 @@
     "path": "00010002",
     "depth": 2,
     "numchild": 6,
-    "title": "Welcome to the Wagtail Bakery!",
-    "draft_title": "Welcome to the Wagtail Bakery!",
+    "title": "Bienvenue chez le Pain du Monde",
+    "draft_title": "Bienvenue chez le Pain du Monde",
     "slug": "home",
     "content_type": [
       "base",
@@ -1911,7 +3029,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T16:24:31.388Z",
-    "latest_revision_created_at": "2017-03-29T18:24:51.618Z"
+    "last_published_at": "2018-12-11T11:20:40.275Z",
+    "latest_revision_created_at": "2018-12-11T11:20:40.193Z",
+    "live_revision": 10
   }
 },
 {
@@ -1940,7 +3060,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T16:25:47.179Z",
-    "latest_revision_created_at": "2017-04-23T20:04:30.432Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-04-23T20:04:30.432Z",
+    "live_revision": null
   }
 },
 {
@@ -1969,7 +3091,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T16:26:58.040Z",
-    "latest_revision_created_at": "2017-04-01T07:35:45.288Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-04-01T07:35:45.288Z",
+    "live_revision": null
   }
 },
 {
@@ -1986,8 +3110,8 @@
       "locations",
       "locationsindexpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/",
     "owner": null,
     "seo_title": "",
@@ -1998,7 +3122,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T16:39:04.527Z",
-    "latest_revision_created_at": "2017-03-06T02:26:16.335Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-06T02:26:16.335Z",
+    "live_revision": null
   }
 },
 {
@@ -2015,8 +3141,8 @@
       "locations",
       "locationpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/new-york/",
     "owner": null,
     "seo_title": "",
@@ -2027,7 +3153,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-10T16:39:55.909Z",
-    "latest_revision_created_at": "2017-03-29T17:50:19.047Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T17:50:19.047Z",
+    "live_revision": null
   }
 },
 {
@@ -2044,8 +3172,8 @@
       "locations",
       "locationpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/reykjavik/",
     "owner": null,
     "seo_title": "",
@@ -2056,7 +3184,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-11T23:10:22.386Z",
-    "latest_revision_created_at": "2017-03-29T17:33:10.041Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T17:33:10.041Z",
+    "live_revision": null
   }
 },
 {
@@ -2073,8 +3203,8 @@
       "locations",
       "locationpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/london/",
     "owner": null,
     "seo_title": "",
@@ -2085,7 +3215,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-11T23:13:20.488Z",
-    "latest_revision_created_at": "2017-03-29T18:03:09.098Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T18:03:09.098Z",
+    "live_revision": null
   }
 },
 {
@@ -2102,8 +3234,8 @@
       "locations",
       "locationpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/wellington/",
     "owner": null,
     "seo_title": "",
@@ -2114,7 +3246,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-11T23:15:58.149Z",
-    "latest_revision_created_at": "2017-03-29T17:29:33.457Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T17:29:33.457Z",
+    "live_revision": null
   }
 },
 {
@@ -2143,7 +3277,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-15T07:42:52.978Z",
-    "latest_revision_created_at": "2017-03-29T06:19:57.009Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T06:19:57.009Z",
+    "live_revision": null
   }
 },
 {
@@ -2153,8 +3289,8 @@
     "path": "000100020006",
     "depth": 3,
     "numchild": 0,
-    "title": "Contact Us",
-    "draft_title": "Contact Us",
+    "title": "Nous contacter",
+    "draft_title": "Nous contacter",
     "slug": "contact-us",
     "content_type": [
       "base",
@@ -2172,7 +3308,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-15T16:55:56.085Z",
-    "latest_revision_created_at": "2017-02-15T17:08:05.684Z"
+    "last_published_at": "2018-12-11T11:19:35.003Z",
+    "latest_revision_created_at": "2018-12-11T11:19:34.924Z",
+    "live_revision": 9
   }
 },
 {
@@ -2182,16 +3320,16 @@
     "path": "000100020005",
     "depth": 3,
     "numchild": 0,
-    "title": "Gallery",
-    "draft_title": "Gallery",
-    "slug": "gallery",
+    "title": "Gallerie",
+    "draft_title": "Gallerie",
+    "slug": "gallerie",
     "content_type": [
       "base",
       "gallerypage"
     ],
     "live": true,
     "has_unpublished_changes": false,
-    "url_path": "/home/gallery/",
+    "url_path": "/home/gallerie/",
     "owner": [
       "admin"
     ],
@@ -2203,7 +3341,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-17T07:51:47.230Z",
-    "latest_revision_created_at": "2017-02-22T07:57:12.151Z"
+    "last_published_at": "2018-12-11T11:13:24.477Z",
+    "latest_revision_created_at": "2018-12-11T11:13:24.407Z",
+    "live_revision": 8
   }
 },
 {
@@ -2234,7 +3374,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-21T08:07:11.832Z",
-    "latest_revision_created_at": "2017-03-29T06:52:34.448Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T06:52:34.448Z",
+    "live_revision": null
   }
 },
 {
@@ -2265,7 +3407,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-21T08:12:04.176Z",
-    "latest_revision_created_at": "2017-03-29T06:58:56.151Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T06:58:56.151Z",
+    "live_revision": null
   }
 },
 {
@@ -2296,7 +3440,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-21T08:17:21.604Z",
-    "latest_revision_created_at": "2017-04-01T07:35:26.199Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-04-01T07:35:26.199Z",
+    "live_revision": null
   }
 },
 {
@@ -2313,8 +3459,8 @@
       "base",
       "standardpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/about/",
     "owner": [
       "admin"
@@ -2327,7 +3473,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-03-17T07:03:16.637Z",
-    "latest_revision_created_at": "2017-03-17T07:47:50.894Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-17T07:47:50.894Z",
+    "live_revision": null
   }
 },
 {
@@ -2358,7 +3506,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-03-22T06:31:05.324Z",
-    "latest_revision_created_at": "2017-04-23T20:03:47.050Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-04-23T20:03:47.050Z",
+    "live_revision": null
   }
 },
 {
@@ -2375,8 +3525,8 @@
       "locations",
       "locationpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/hofn/",
     "owner": [
       "admin"
@@ -2389,7 +3539,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-11T23:10:22.386Z",
-    "latest_revision_created_at": "2017-03-29T18:05:47.930Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T18:05:47.930Z",
+    "live_revision": null
   }
 },
 {
@@ -2406,8 +3558,8 @@
       "locations",
       "locationpage"
     ],
-    "live": true,
-    "has_unpublished_changes": false,
+    "live": false,
+    "has_unpublished_changes": true,
     "url_path": "/home/locations/akranes/",
     "owner": [
       "admin"
@@ -2420,7 +3572,9 @@
     "expired": false,
     "locked": false,
     "first_published_at": "2017-02-11T23:10:22.386Z",
-    "latest_revision_created_at": "2017-03-29T18:09:44.290Z"
+    "last_published_at": null,
+    "latest_revision_created_at": "2017-03-29T18:09:44.290Z",
+    "live_revision": null
   }
 },
 {
@@ -2440,7 +3594,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 17829
+    "file_size": 17829,
+    "file_hash": ""
   }
 },
 {
@@ -2460,7 +3615,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 173675
+    "file_size": 173675,
+    "file_hash": ""
   }
 },
 {
@@ -2480,7 +3636,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 506419
+    "file_size": 506419,
+    "file_hash": ""
   }
 },
 {
@@ -2500,7 +3657,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 166505
+    "file_size": 166505,
+    "file_hash": ""
   }
 },
 {
@@ -2520,7 +3678,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 174743
+    "file_size": 174743,
+    "file_hash": ""
   }
 },
 {
@@ -2540,7 +3699,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 127107
+    "file_size": 127107,
+    "file_hash": ""
   }
 },
 {
@@ -2560,7 +3720,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 247052
+    "file_size": 247052,
+    "file_hash": ""
   }
 },
 {
@@ -2580,7 +3741,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 122348
+    "file_size": 122348,
+    "file_hash": ""
   }
 },
 {
@@ -2600,7 +3762,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 408107
+    "file_size": 408107,
+    "file_hash": ""
   }
 },
 {
@@ -2620,7 +3783,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 137708
+    "file_size": 137708,
+    "file_hash": ""
   }
 },
 {
@@ -2640,7 +3804,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 73964
+    "file_size": 73964,
+    "file_hash": ""
   }
 },
 {
@@ -2660,7 +3825,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 297826
+    "file_size": 297826,
+    "file_hash": ""
   }
 },
 {
@@ -2680,7 +3846,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 72910
+    "file_size": 72910,
+    "file_hash": ""
   }
 },
 {
@@ -2700,7 +3867,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 79398
+    "file_size": 79398,
+    "file_hash": ""
   }
 },
 {
@@ -2720,7 +3888,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 56891
+    "file_size": 56891,
+    "file_hash": ""
   }
 },
 {
@@ -2740,7 +3909,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 104030
+    "file_size": 104030,
+    "file_hash": ""
   }
 },
 {
@@ -2760,7 +3930,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 41014
+    "file_size": 41014,
+    "file_hash": ""
   }
 },
 {
@@ -2780,7 +3951,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 137317
+    "file_size": 137317,
+    "file_hash": ""
   }
 },
 {
@@ -2800,7 +3972,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 112991
+    "file_size": 112991,
+    "file_hash": ""
   }
 },
 {
@@ -2820,7 +3993,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 60721
+    "file_size": 60721,
+    "file_hash": ""
   }
 },
 {
@@ -2840,7 +4014,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 151259
+    "file_size": 151259,
+    "file_hash": ""
   }
 },
 {
@@ -2860,7 +4035,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 104969
+    "file_size": 104969,
+    "file_hash": ""
   }
 },
 {
@@ -2880,7 +4056,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 167917
+    "file_size": 167917,
+    "file_hash": ""
   }
 },
 {
@@ -2900,7 +4077,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 213288
+    "file_size": 213288,
+    "file_hash": ""
   }
 },
 {
@@ -2920,7 +4098,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 193665
+    "file_size": 193665,
+    "file_hash": ""
   }
 },
 {
@@ -2940,7 +4119,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 121235
+    "file_size": 121235,
+    "file_hash": ""
   }
 },
 {
@@ -2960,7 +4140,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 87095
+    "file_size": 87095,
+    "file_hash": ""
   }
 },
 {
@@ -2980,7 +4161,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 117057
+    "file_size": 117057,
+    "file_hash": ""
   }
 },
 {
@@ -3000,7 +4182,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 167793
+    "file_size": 167793,
+    "file_hash": ""
   }
 },
 {
@@ -3020,7 +4203,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 206071
+    "file_size": 206071,
+    "file_hash": ""
   }
 },
 {
@@ -3040,7 +4224,8 @@
     "focal_point_y": 248,
     "focal_point_width": 1031,
     "focal_point_height": 496,
-    "file_size": 279068
+    "file_size": 279068,
+    "file_hash": ""
   }
 },
 {
@@ -3060,7 +4245,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 207895
+    "file_size": 207895,
+    "file_hash": ""
   }
 },
 {
@@ -3080,7 +4266,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 369123
+    "file_size": 369123,
+    "file_hash": ""
   }
 },
 {
@@ -3100,7 +4287,8 @@
     "focal_point_y": 476,
     "focal_point_width": 1031,
     "focal_point_height": 537,
-    "file_size": 225856
+    "file_size": 225856,
+    "file_hash": ""
   }
 },
 {
@@ -3120,7 +4308,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 189650
+    "file_size": 189650,
+    "file_hash": ""
   }
 },
 {
@@ -3140,7 +4329,8 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 46112
+    "file_size": 46112,
+    "file_hash": ""
   }
 },
 {
@@ -3160,7 +4350,260 @@
     "focal_point_y": null,
     "focal_point_width": null,
     "focal_point_height": null,
-    "file_size": 18521
+    "file_size": 18521,
+    "file_hash": ""
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 54,
+  "fields": {
+    "collection": 1,
+    "title": "Boutique",
+    "file": "original_images/DSC03663-1024x442.jpg",
+    "width": 1024,
+    "height": 442,
+    "created_at": "2018-12-11T11:04:50.362Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 160336,
+    "file_hash": "d4a878608e4fc6bcc22d0213bd22d47f5d6d7291"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 55,
+  "fields": {
+    "collection": 2,
+    "title": "Boutique en face",
+    "file": "original_images/DSC03653-1024x662.jpg",
+    "width": 1024,
+    "height": 662,
+    "created_at": "2018-12-11T11:21:56.452Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 200886,
+    "file_hash": "5d906e9a501246ca06606bb499278bc31a0e9191"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 56,
+  "fields": {
+    "collection": 2,
+    "title": "Baguettes",
+    "file": "original_images/DSC03655-726x1024.jpg",
+    "width": 726,
+    "height": 1024,
+    "created_at": "2018-12-11T11:21:56.581Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 185838,
+    "file_hash": "2f66bca4f3bc00aedd79ab06a43361dabfdee8e8"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 57,
+  "fields": {
+    "collection": 2,
+    "title": "Pr\u00e9paration baguettes",
+    "file": "original_images/DSC03658-1024x338.jpg",
+    "width": 1024,
+    "height": 338,
+    "created_at": "2018-12-11T11:21:56.726Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 103492,
+    "file_hash": "2810cea4bb4f806d991248a5e9e9b97928f27d9c"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 58,
+  "fields": {
+    "collection": 2,
+    "title": "Pain tradition",
+    "file": "original_images/DSC03662-1024x681.jpg",
+    "width": 1024,
+    "height": 681,
+    "created_at": "2018-12-11T11:21:56.885Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 233813,
+    "file_hash": "43fced385037c466eedb100294a1a50f3001caa3"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 60,
+  "fields": {
+    "collection": 2,
+    "title": "Pain ancien",
+    "file": "original_images/DSC03664-1024x560.jpg",
+    "width": 1024,
+    "height": 560,
+    "created_at": "2018-12-11T11:21:57.201Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 235663,
+    "file_hash": "c498e502d42a80d8a7c490dbe08f51fb88d3e027"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 61,
+  "fields": {
+    "collection": 2,
+    "title": "Grop pain",
+    "file": "original_images/DSC03665-1024x253.jpg",
+    "width": 1024,
+    "height": 253,
+    "created_at": "2018-12-11T11:21:57.353Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 113415,
+    "file_hash": "0b47d96aaa58a9574230cd626f76c8dbfa6aef7a"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 62,
+  "fields": {
+    "collection": 2,
+    "title": "Preparation 1",
+    "file": "original_images/DSC03668-1024x507.jpg",
+    "width": 1024,
+    "height": 507,
+    "created_at": "2018-12-11T11:21:57.508Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 98391,
+    "file_hash": "fed8cb613e951b4dcd6d48b2fa0d4e205a17a4a1"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 63,
+  "fields": {
+    "collection": 2,
+    "title": "Petrissage",
+    "file": "original_images/DSC03669-1024x608.jpg",
+    "width": 1024,
+    "height": 608,
+    "created_at": "2018-12-11T11:21:57.659Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 118241,
+    "file_hash": "ba3dc7a9a3390605c352ff7dcd3af039da3c8b3b"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 64,
+  "fields": {
+    "collection": 2,
+    "title": "Baguettes",
+    "file": "original_images/DSC03684-1024x459.jpg",
+    "width": 1024,
+    "height": 459,
+    "created_at": "2018-12-11T11:21:57.819Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 191302,
+    "file_hash": "d696cf8c1c0140271c546d3aeb119fd8f498b0dd"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 65,
+  "fields": {
+    "collection": 2,
+    "title": "Pain au raisins",
+    "file": "original_images/DSC03685-1024x498.jpg",
+    "width": 1024,
+    "height": 498,
+    "created_at": "2018-12-11T11:21:57.975Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 159659,
+    "file_hash": "fa158ef9ad052802e368e61fc73b2d046ac72340"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 66,
+  "fields": {
+    "collection": 2,
+    "title": "Grains",
+    "file": "original_images/DSC03694-1024x373.jpg",
+    "width": 1024,
+    "height": 373,
+    "created_at": "2018-12-11T11:21:58.126Z",
+    "uploaded_by_user": [
+      "admin"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 144880,
+    "file_hash": "c97a52e9e682ef437784984e11525f3247dfdc7d"
   }
 },
 {
@@ -3169,7 +4612,7 @@
   "fields": {
     "introduction": "Pie gingerbread cake caramels chocolate cake tiramisu wafer. Gummi bears chupa chups chocolate. Topping chupa chups bonbon cake pie caramels. Pie gingerbread cake caramels chocolate cake tiramisu wafer.",
     "image": 46,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Chocolate bar I love marzipan chupa chups souffl\\u00e9 chocolate bar. Biscuit caramels lollipop cookie. Macaroon I love tart pudding topping I love. Jujubes macaroon gummies pudding icing cake pastry. Candy canes candy chocolate cake I love chocolate carrot cake halvah. I love croissant I love donut. Chocolate sweet chocolate cake cotton candy souffl\\u00e9 caramels pie tiramisu I love. Lemon drops topping caramels. Pudding candy cotton candy gingerbread jelly beans jelly-o tiramisu cotton candy souffl\\u00e9. Cake bear claw cupcake pastry gummi bears cake.</p>\"}, {\"type\": \"heading_block\", \"value\": {\"heading_text\": \"Never say no to more\", \"size\": \"h3\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>Muffin wafer chocolate cake bonbon icing chupa chups cupcake. Pudding drag\\u00e9e souffl\\u00e9 icing caramels chupa chups sweet muffin. Pastry fruitcake pastry dessert chupa chups. Sugar plum wafer chupa chups tootsie roll candy chocolate bar souffl\\u00e9 sesame snaps jelly-o. Dessert macaroon jelly fruitcake jujubes marshmallow cake. Gummies souffl\\u00e9 cotton candy candy pastry powder topping muffin cotton candy. I love jelly beans I love I love chocolate cake fruitcake oat cake drag\\u00e9e dessert.</p><p>Chupa chups marzipan pie caramels cotton candy jelly-o. Pie sweet cake souffl\\u00e9 apple pie cake. Chocolate cake chupa chups bear claw cotton candy. I love marshmallow chocolate sweet I love. Drag\\u00e9e donut cotton candy jujubes ice cream. Marshmallow gummies gingerbread marzipan. Caramels tootsie roll cake. Macaroon chocolate liquorice ice cream. Candy biscuit chupa chups chocolate cake cake danish. Sesame snaps I love macaroon cupcake bear claw chocolate cake I love candy canes.</p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Chocolate bar I love marzipan chupa chups souffl\\u00e9 chocolate bar. Biscuit caramels lollipop cookie. Macaroon I love tart pudding topping I love. Jujubes macaroon gummies pudding icing cake pastry. Candy canes candy chocolate cake I love chocolate carrot cake halvah. I love croissant I love donut. Chocolate sweet chocolate cake cotton candy souffl\\u00e9 caramels pie tiramisu I love. Lemon drops topping caramels. Pudding candy cotton candy gingerbread jelly beans jelly-o tiramisu cotton candy souffl\\u00e9. Cake bear claw cupcake pastry gummi bears cake.</p>\", \"id\": \"70fa7ce5-975e-4bfb-b994-e6dd2672097c\"}, {\"type\": \"heading_block\", \"value\": {\"heading_text\": \"Never say no to more\", \"size\": \"h3\"}, \"id\": \"90826a97-a019-4f9c-8013-707483716d3e\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>Muffin wafer chocolate cake bonbon icing chupa chups cupcake. Pudding drag\\u00e9e souffl\\u00e9 icing caramels chupa chups sweet muffin. Pastry fruitcake pastry dessert chupa chups. Sugar plum wafer chupa chups tootsie roll candy chocolate bar souffl\\u00e9 sesame snaps jelly-o. Dessert macaroon jelly fruitcake jujubes marshmallow cake. Gummies souffl\\u00e9 cotton candy candy pastry powder topping muffin cotton candy. I love jelly beans I love I love chocolate cake fruitcake oat cake drag\\u00e9e dessert.</p><p>Chupa chups marzipan pie caramels cotton candy jelly-o. Pie sweet cake souffl\\u00e9 apple pie cake. Chocolate cake chupa chups bear claw cotton candy. I love marshmallow chocolate sweet I love. Drag\\u00e9e donut cotton candy jujubes ice cream. Marshmallow gummies gingerbread marzipan. Caramels tootsie roll cake. Macaroon chocolate liquorice ice cream. Candy biscuit chupa chups chocolate cake cake danish. Sesame snaps I love macaroon cupcake bear claw chocolate cake I love candy canes.</p>\", \"id\": \"9a4647d5-fb2a-46de-b98f-74d0dfbe27fa\"}]",
     "address": "Hof 2,\r\nL\u00e6kjarh\u00fas,\r\n785 \u00d6r\u00e6fi,\r\nIceland",
     "lat_long": "63.9095213,-16.7093877"
   }
@@ -3180,7 +4623,7 @@
   "fields": {
     "introduction": "Ice cream pie tiramisu carrot cake pie macaroon brownie wafer. Cupcake cookie cotton candy jelly-o macaroon tootsie roll ice cream. Biscuit caramels apple pie. Marshmallow lollipop gingerbread chocolate powder ice cream tootsie roll.",
     "image": 45,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Gingerbread jujubes pudding lollipop cake sweet pudding biscuit. Dessert sweet roll gummies. Pudding jujubes powder macaroon. Lollipop sweet roll jelly-o tiramisu chupa chups marzipan tart cookie. Macaroon tootsie roll lemon drops. Fruitcake macaroon liquorice bonbon chocolate bar caramels donut pastry. Wafer candy canes jujubes powder gummi bears candy canes biscuit pastry oat cake. Halvah pastry lemon drops gummi bears lemon drops powder. Tart lollipop bonbon apple pie sugar plum gummies cake.</p><p>Souffl\\u00e9 sweet roll caramels toffee. Ice cream cotton candy jelly-o sweet roll sugar plum dessert chupa chups. Drag\\u00e9e ice cream chocolate cake candy canes sugar plum pudding cheesecake. Tart jelly beans liquorice ice cream gummi bears lollipop tiramisu. Ice cream pie sweet roll liquorice. Tiramisu jujubes lollipop chocolate tiramisu. Cotton candy jelly cake lemon drops lollipop. Tootsie roll chocolate bar jelly-o cookie wafer cookie toffee pastry. Sugar plum chocolate bar jelly beans gummies jujubes sweet chocolate cake.</p><p></p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Gingerbread jujubes pudding lollipop cake sweet pudding biscuit. Dessert sweet roll gummies. Pudding jujubes powder macaroon. Lollipop sweet roll jelly-o tiramisu chupa chups marzipan tart cookie. Macaroon tootsie roll lemon drops. Fruitcake macaroon liquorice bonbon chocolate bar caramels donut pastry. Wafer candy canes jujubes powder gummi bears candy canes biscuit pastry oat cake. Halvah pastry lemon drops gummi bears lemon drops powder. Tart lollipop bonbon apple pie sugar plum gummies cake.</p><p>Souffl\\u00e9 sweet roll caramels toffee. Ice cream cotton candy jelly-o sweet roll sugar plum dessert chupa chups. Drag\\u00e9e ice cream chocolate cake candy canes sugar plum pudding cheesecake. Tart jelly beans liquorice ice cream gummi bears lollipop tiramisu. Ice cream pie sweet roll liquorice. Tiramisu jujubes lollipop chocolate tiramisu. Cotton candy jelly cake lemon drops lollipop. Tootsie roll chocolate bar jelly-o cookie wafer cookie toffee pastry. Sugar plum chocolate bar jelly beans gummies jujubes sweet chocolate cake.</p><p></p>\", \"id\": \"036a5091-c27c-4e65-b54e-f76ccdd8c9df\"}]",
     "address": "Laugavegur 36,\r\n101 Reykjav\u00edk,\r\nIceland",
     "lat_long": "64.144018, -21.950953"
   }
@@ -3191,7 +4634,7 @@
   "fields": {
     "introduction": "Chocolate bar tiramisu toffee. Topping pie powder candy canes jujubes liquorice. Apple pie muffin marshmallow tiramisu powder cotton candy topping. Apple pie tiramisu marshmallow sesame snaps.",
     "image": 47,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Cupcake ipsum dolor sit. Amet cake bear claw cheesecake marshmallow donut topping. Bonbon tootsie roll tiramisu drag\\u00e9e. Sweet macaroon gummies tootsie roll toffee cupcake jujubes gingerbread. Chocolate bar cupcake danish muffin donut cookie souffl\\u00e9 carrot cake. Cake cake macaroon muffin sesame snaps marzipan apple pie cheesecake.</p>\"}, {\"type\": \"heading_block\", \"value\": {\"heading_text\": \"Now with sugar\", \"size\": \"h3\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>Chocolate caramels cupcake jelly beans icing gummi bears fruitcake gingerbread. Cupcake drag\\u00e9e tootsie roll cheesecake chocolate. Jelly lemon drops lemon drops chocolate. Sesame snaps chocolate bar cheesecake tiramisu gummi bears sweet sesame snaps wafer. Pie cake macaroon sugar plum toffee icing. Bonbon sweet roll cupcake sesame snaps toffee candy fruitcake.</p><p>Cupcake cupcake souffl\\u00e9 jelly beans chocolate cake lemon drops. Dessert chocolate bar cotton candy. Pastry icing oat cake wafer. Marshmallow topping gummies cotton candy cake gingerbread. Donut macaroon carrot cake. Pie candy canes cupcake powder marzipan. Sweet oat cake jelly beans apple pie ice cream. Brownie caramels chupa chups marzipan. Biscuit biscuit croissant fruitcake pastry pastry.</p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Cupcake ipsum dolor sit. Amet cake bear claw cheesecake marshmallow donut topping. Bonbon tootsie roll tiramisu drag\\u00e9e. Sweet macaroon gummies tootsie roll toffee cupcake jujubes gingerbread. Chocolate bar cupcake danish muffin donut cookie souffl\\u00e9 carrot cake. Cake cake macaroon muffin sesame snaps marzipan apple pie cheesecake.</p>\", \"id\": \"7c040a50-4c02-44f7-a399-3b9464906d18\"}, {\"type\": \"heading_block\", \"value\": {\"heading_text\": \"Now with sugar\", \"size\": \"h3\"}, \"id\": \"f652ce37-1b44-4776-9b92-da65ae729f44\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>Chocolate caramels cupcake jelly beans icing gummi bears fruitcake gingerbread. Cupcake drag\\u00e9e tootsie roll cheesecake chocolate. Jelly lemon drops lemon drops chocolate. Sesame snaps chocolate bar cheesecake tiramisu gummi bears sweet sesame snaps wafer. Pie cake macaroon sugar plum toffee icing. Bonbon sweet roll cupcake sesame snaps toffee candy fruitcake.</p><p>Cupcake cupcake souffl\\u00e9 jelly beans chocolate cake lemon drops. Dessert chocolate bar cotton candy. Pastry icing oat cake wafer. Marshmallow topping gummies cotton candy cake gingerbread. Donut macaroon carrot cake. Pie candy canes cupcake powder marzipan. Sweet oat cake jelly beans apple pie ice cream. Brownie caramels chupa chups marzipan. Biscuit biscuit croissant fruitcake pastry pastry.</p>\", \"id\": \"9c93132b-ebd7-4fdd-9cb6-99c88c5acacc\"}]",
     "address": "Klettsvegi 1,\r\n870 V\u00edk,\r\nIceland",
     "lat_long": "63.419061,-19.0064982"
   }
@@ -3202,7 +4645,7 @@
   "fields": {
     "introduction": "Gummies dessert cake pastry jujubes cotton candy apple pie chocolate bar muffin. Bonbon souffl\u00e9 icing brownie cheesecake candy canes. Sesame snaps chocolate pudding souffl\u00e9 powder pastry pastry jelly beans. Chocolate cake caramels gingerbread bear claw gingerbread jelly-o.",
     "image": 44,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Jelly-o marzipan fruitcake. Candy marshmallow candy canes macaroon marshmallow marshmallow sesame snaps. Cookie croissant wafer jelly beans. Bonbon sesame snaps danish chocolate bar. Pudding marzipan tootsie roll lollipop sesame snaps souffl\\u00e9 fruitcake. Tootsie roll jujubes cookie chocolate topping cupcake. Pudding cake gummies chupa chups jelly beans gingerbread sesame snaps gummi bears gummies. Chocolate chupa chups jelly candy canes carrot cake croissant ice cream. Bonbon sugar plum jelly beans cake tiramisu. Carrot cake gummies carrot cake macaroon wafer cake cupcake.</p><p>Jelly-o candy canes macaroon chocolate cake cheesecake cake lollipop cookie. Halvah candy topping sugar plum topping sesame snaps cotton candy topping. Sesame snaps brownie chocolate cake. Lemon drops sweet roll cookie drag\\u00e9e chocolate bar sugar plum jelly-o. Liquorice toffee jujubes chocolate cake cheesecake biscuit. Marshmallow chocolate bar oat cake wafer souffl\\u00e9 brownie fruitcake. Oat cake icing cheesecake liquorice caramels.</p>\"}, {\"type\": \"heading_block\", \"value\": {\"heading_text\": \"An awesome heading\", \"size\": \"h3\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>Brownie marzipan marshmallow tart pudding carrot cake. Cheesecake jelly beans gingerbread lollipop. Marshmallow tiramisu jelly beans apple pie gingerbread candy bonbon carrot cake. Pastry candy gummies danish pudding topping. Tart jelly-o chocolate wafer pastry brownie chocolate bar oat cake. Cookie sugar plum liquorice jelly beans. Sweet jujubes candy canes sweet chocolate chocolate cookie chocolate cookie. Cookie pudding toffee tart.</p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Jelly-o marzipan fruitcake. Candy marshmallow candy canes macaroon marshmallow marshmallow sesame snaps. Cookie croissant wafer jelly beans. Bonbon sesame snaps danish chocolate bar. Pudding marzipan tootsie roll lollipop sesame snaps souffl\\u00e9 fruitcake. Tootsie roll jujubes cookie chocolate topping cupcake. Pudding cake gummies chupa chups jelly beans gingerbread sesame snaps gummi bears gummies. Chocolate chupa chups jelly candy canes carrot cake croissant ice cream. Bonbon sugar plum jelly beans cake tiramisu. Carrot cake gummies carrot cake macaroon wafer cake cupcake.</p><p>Jelly-o candy canes macaroon chocolate cake cheesecake cake lollipop cookie. Halvah candy topping sugar plum topping sesame snaps cotton candy topping. Sesame snaps brownie chocolate cake. Lemon drops sweet roll cookie drag\\u00e9e chocolate bar sugar plum jelly-o. Liquorice toffee jujubes chocolate cake cheesecake biscuit. Marshmallow chocolate bar oat cake wafer souffl\\u00e9 brownie fruitcake. Oat cake icing cheesecake liquorice caramels.</p>\", \"id\": \"0880074e-24a4-4c1b-970a-6791f4edbfa6\"}, {\"type\": \"heading_block\", \"value\": {\"heading_text\": \"An awesome heading\", \"size\": \"h3\"}, \"id\": \"4f47034e-4f63-4463-b17b-b636886eb018\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>Brownie marzipan marshmallow tart pudding carrot cake. Cheesecake jelly beans gingerbread lollipop. Marshmallow tiramisu jelly beans apple pie gingerbread candy bonbon carrot cake. Pastry candy gummies danish pudding topping. Tart jelly-o chocolate wafer pastry brownie chocolate bar oat cake. Cookie sugar plum liquorice jelly beans. Sweet jujubes candy canes sweet chocolate chocolate cookie chocolate cookie. Cookie pudding toffee tart.</p>\", \"id\": \"9180b25b-05fa-467b-97ca-db770278f850\"}]",
     "address": "Eyravegur,\r\n800 Selfoss,\r\nIceland",
     "lat_long": "63.9375899, -21.0419085"
   }
@@ -3213,7 +4656,7 @@
   "fields": {
     "introduction": "Ice cream pie tiramisu carrot cake pie macaroon brownie wafer. Cupcake cookie cotton candy jelly-o macaroon tootsie roll ice cream. Biscuit caramels apple pie. Marshmallow lollipop gingerbread chocolate powder ice cream tootsie roll.",
     "image": 48,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Gingerbread jujubes pudding lollipop cake sweet pudding biscuit. Dessert sweet roll gummies. Pudding jujubes powder macaroon. Lollipop sweet roll jelly-o tiramisu chupa chups marzipan tart cookie. Macaroon tootsie roll lemon drops. Fruitcake macaroon liquorice bonbon chocolate bar caramels donut pastry. Wafer candy canes jujubes powder gummi bears candy canes biscuit pastry oat cake. Halvah pastry lemon drops gummi bears lemon drops powder. Tart lollipop bonbon apple pie sugar plum gummies cake.</p><p>Souffl\\u00e9 sweet roll caramels toffee. Ice cream cotton candy jelly-o sweet roll sugar plum dessert chupa chups. Drag\\u00e9e ice cream chocolate cake candy canes sugar plum pudding cheesecake. Tart jelly beans liquorice ice cream gummi bears lollipop tiramisu. Ice cream pie sweet roll liquorice. Tiramisu jujubes lollipop chocolate tiramisu. Cotton candy jelly cake lemon drops lollipop. Tootsie roll chocolate bar jelly-o cookie wafer cookie toffee pastry. Sugar plum chocolate bar jelly beans gummies jujubes sweet chocolate cake.</p><p></p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Gingerbread jujubes pudding lollipop cake sweet pudding biscuit. Dessert sweet roll gummies. Pudding jujubes powder macaroon. Lollipop sweet roll jelly-o tiramisu chupa chups marzipan tart cookie. Macaroon tootsie roll lemon drops. Fruitcake macaroon liquorice bonbon chocolate bar caramels donut pastry. Wafer candy canes jujubes powder gummi bears candy canes biscuit pastry oat cake. Halvah pastry lemon drops gummi bears lemon drops powder. Tart lollipop bonbon apple pie sugar plum gummies cake.</p><p>Souffl\\u00e9 sweet roll caramels toffee. Ice cream cotton candy jelly-o sweet roll sugar plum dessert chupa chups. Drag\\u00e9e ice cream chocolate cake candy canes sugar plum pudding cheesecake. Tart jelly beans liquorice ice cream gummi bears lollipop tiramisu. Ice cream pie sweet roll liquorice. Tiramisu jujubes lollipop chocolate tiramisu. Cotton candy jelly cake lemon drops lollipop. Tootsie roll chocolate bar jelly-o cookie wafer cookie toffee pastry. Sugar plum chocolate bar jelly beans gummies jujubes sweet chocolate cake.</p><p></p>\", \"id\": \"7534dd46-e374-4e21-ba8f-76f8b73abcab\"}]",
     "address": "Hafnarbraut,\r\n780 H\u00f6fn \u00ed Hornafir\u00f0i,\r\nIceland",
     "lat_long": "64.2518583,-15.2037097"
   }
@@ -3224,7 +4667,7 @@
   "fields": {
     "introduction": "Ice cream pie tiramisu carrot cake pie macaroon brownie wafer. Cupcake cookie cotton candy jelly-o macaroon tootsie roll ice cream. Biscuit caramels apple pie. Marshmallow lollipop gingerbread chocolate powder ice cream tootsie roll.",
     "image": 49,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Gingerbread jujubes pudding lollipop cake sweet pudding biscuit. Dessert sweet roll gummies. Pudding jujubes powder macaroon. Lollipop sweet roll jelly-o tiramisu chupa chups marzipan tart cookie. Macaroon tootsie roll lemon drops. Fruitcake macaroon liquorice bonbon chocolate bar caramels donut pastry. Wafer candy canes jujubes powder gummi bears candy canes biscuit pastry oat cake. Halvah pastry lemon drops gummi bears lemon drops powder. Tart lollipop bonbon apple pie sugar plum gummies cake.</p><p>Souffl\\u00e9 sweet roll caramels toffee. Ice cream cotton candy jelly-o sweet roll sugar plum dessert chupa chups. Drag\\u00e9e ice cream chocolate cake candy canes sugar plum pudding cheesecake. Tart jelly beans liquorice ice cream gummi bears lollipop tiramisu. Ice cream pie sweet roll liquorice. Tiramisu jujubes lollipop chocolate tiramisu. Cotton candy jelly cake lemon drops lollipop. Tootsie roll chocolate bar jelly-o cookie wafer cookie toffee pastry. Sugar plum chocolate bar jelly beans gummies jujubes sweet chocolate cake.</p><p></p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><br/></p><p>Gingerbread jujubes pudding lollipop cake sweet pudding biscuit. Dessert sweet roll gummies. Pudding jujubes powder macaroon. Lollipop sweet roll jelly-o tiramisu chupa chups marzipan tart cookie. Macaroon tootsie roll lemon drops. Fruitcake macaroon liquorice bonbon chocolate bar caramels donut pastry. Wafer candy canes jujubes powder gummi bears candy canes biscuit pastry oat cake. Halvah pastry lemon drops gummi bears lemon drops powder. Tart lollipop bonbon apple pie sugar plum gummies cake.</p><p>Souffl\\u00e9 sweet roll caramels toffee. Ice cream cotton candy jelly-o sweet roll sugar plum dessert chupa chups. Drag\\u00e9e ice cream chocolate cake candy canes sugar plum pudding cheesecake. Tart jelly beans liquorice ice cream gummi bears lollipop tiramisu. Ice cream pie sweet roll liquorice. Tiramisu jujubes lollipop chocolate tiramisu. Cotton candy jelly cake lemon drops lollipop. Tootsie roll chocolate bar jelly-o cookie wafer cookie toffee pastry. Sugar plum chocolate bar jelly beans gummies jujubes sweet chocolate cake.</p><p></p>\", \"id\": \"9a16ce97-3db7-4623-b6a5-f621de458ba5\"}]",
     "address": "Skagabraut 43,\r\n300 Akranes,\r\nIceland",
     "lat_long": "64.3214253,-22.0674947"
   }
@@ -3241,7 +4684,7 @@
   "model": "breads.breadsindexpage",
   "pk": 3,
   "fields": {
-    "introduction": "We feature outlandishly delicious breads sourced from every continent (except Antarctica)",
+    "introduction": "Nous proposons des pains traditionnels, outrageusement d\u00e9licieux et sourtout 100% naturels.",
     "image": 9
   }
 },
@@ -3399,7 +4842,7 @@
   "fields": {
     "introduction": "Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (\"dimorphic\" means \"having two forms\").",
     "image": 21,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Yeasts are eukaryotic, single-celled microorganisms classified as members of the fungus kingdom. The yeast lineage[which?] originated hundreds of millions of years ago, and 1,500 species are currently identified.[1][2][3] They are estimated to constitute 1% of all described fungal species.[4] Yeasts are unicellular organisms which evolved from multicellular ancestors,[5] with some species having the ability to develop multicellular characteristics by forming strings of connected budding cells known as pseudohyphae or false hyphae.[6] Yeast sizes vary greatly, depending on species and environment, typically measuring 3\\u20134 \\u00b5m in diameter, although some yeasts can grow to 40 \\u00b5m in size.[7] Most yeasts reproduce asexually by mitosis, and many do so by the asymmetric division process known as budding.</p><h3>Contrast with Molds</h3><p>Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (\\\"dimorphic\\\" means \\\"having two forms\\\").<br/></p><p>By fermentation, the yeast species Saccharomyces cerevisiae converts carbohydrates to carbon dioxide and alcohols \\u2013 for thousands of years the carbon dioxide has been used in baking and the alcohol in alcoholic beverages.[8] It is also a centrally important model organism in modern cell biology research, and is one of the most thoroughly researched eukaryotic microorganisms. Researchers have used it to gather information about the biology of the eukaryotic cell and ultimately human biology.[9] Other species of yeasts, such as Candida albicans, are opportunistic pathogens and can cause infections in humans. Yeasts have recently been used to generate electricity in microbial fuel cells,[10] and produce ethanol for the biofuel industry.<br/></p><p>Yeasts do not form a single taxonomic or phylogenetic grouping. The term \\\"yeast\\\" is often taken as a synonym for Saccharomyces cerevisiae,[11] but the phylogenetic diversity of yeasts is shown by their placement in two separate phyla: the Ascomycota and the Basidiomycota. The budding yeasts (\\\"true yeasts\\\") are classified in the order Saccharomycetales,[12] within the phylum Ascomycota.<br/></p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 39, \"attribution\": \"Creative Commons\", \"caption\": \"Raised Yummy\"}}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Yeasts are eukaryotic, single-celled microorganisms classified as members of the fungus kingdom. The yeast lineage[which?] originated hundreds of millions of years ago, and 1,500 species are currently identified.[1][2][3] They are estimated to constitute 1% of all described fungal species.[4] Yeasts are unicellular organisms which evolved from multicellular ancestors,[5] with some species having the ability to develop multicellular characteristics by forming strings of connected budding cells known as pseudohyphae or false hyphae.[6] Yeast sizes vary greatly, depending on species and environment, typically measuring 3\\u20134 \\u00b5m in diameter, although some yeasts can grow to 40 \\u00b5m in size.[7] Most yeasts reproduce asexually by mitosis, and many do so by the asymmetric division process known as budding.</p><h3>Contrast with Molds</h3><p>Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (\\\"dimorphic\\\" means \\\"having two forms\\\").<br/></p><p>By fermentation, the yeast species Saccharomyces cerevisiae converts carbohydrates to carbon dioxide and alcohols \\u2013 for thousands of years the carbon dioxide has been used in baking and the alcohol in alcoholic beverages.[8] It is also a centrally important model organism in modern cell biology research, and is one of the most thoroughly researched eukaryotic microorganisms. Researchers have used it to gather information about the biology of the eukaryotic cell and ultimately human biology.[9] Other species of yeasts, such as Candida albicans, are opportunistic pathogens and can cause infections in humans. Yeasts have recently been used to generate electricity in microbial fuel cells,[10] and produce ethanol for the biofuel industry.<br/></p><p>Yeasts do not form a single taxonomic or phylogenetic grouping. The term \\\"yeast\\\" is often taken as a synonym for Saccharomyces cerevisiae,[11] but the phylogenetic diversity of yeasts is shown by their placement in two separate phyla: the Ascomycota and the Basidiomycota. The budding yeasts (\\\"true yeasts\\\") are classified in the order Saccharomycetales,[12] within the phylum Ascomycota.<br/></p>\", \"id\": \"2cb7a7fa-ed32-4d40-8850-cc60255fde6d\"}, {\"type\": \"image_block\", \"value\": {\"image\": 39, \"attribution\": \"Creative Commons\", \"caption\": \"Raised Yummy\"}, \"id\": \"46f2bfb0-ff2e-4294-a010-a9316a4278b1\"}]",
     "subtitle": "The art of cultivating yeast",
     "date_published": "2017-01-12"
   }
@@ -3410,7 +4853,7 @@
   "fields": {
     "introduction": "Baking is a method of cooking food that uses prolonged dry heat, normally in an oven, but also in hot ashes, or on hot stones. The most common baked item is bread but many other types of foods are baked.",
     "image": 22,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Heat is <b>gradually</b> transferred \\\"from the surface of cakes, cookies, and breads to their centre. As heat travels through it transforms batters and doughs into baked goods with a firm dry crust and a softer centre\\\".[2] Baking can be combined with grilling to produce a hybrid barbecue variant by using both methods simultaneously, or one after the other. Baking is related to barbecuing because the concept of the masonry oven is similar to that of a smoke pit.</p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 24, \"attribution\": \"Creative Commons\", \"caption\": \"Soda Bread\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>Because of historical social and familial roles,\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Baking\\\">baking</a>\\u00a0has traditionally been performed at home by women for domestic consumption and by men in bakeries and restaurants for local consumption. When production was industrialized, baking was automated by machines in large factories. The art of baking remains a fundamental skill and is important for nutrition, as baked goods, especially breads, are a common but important food, both from an economic and cultural point of view. A person who prepares baked goods as a profession is called a baker.</p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 12, \"attribution\": \"\", \"caption\": \"\"}}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Heat is <b>gradually</b> transferred \\\"from the surface of cakes, cookies, and breads to their centre. As heat travels through it transforms batters and doughs into baked goods with a firm dry crust and a softer centre\\\".[2] Baking can be combined with grilling to produce a hybrid barbecue variant by using both methods simultaneously, or one after the other. Baking is related to barbecuing because the concept of the masonry oven is similar to that of a smoke pit.</p>\", \"id\": \"3a7e0963-ba59-48db-9739-decfda1e6837\"}, {\"type\": \"image_block\", \"value\": {\"image\": 24, \"attribution\": \"Creative Commons\", \"caption\": \"Soda Bread\"}, \"id\": \"627d1bc7-edfa-4e11-a4cf-9d3c725a6b0d\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>Because of historical social and familial roles,\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Baking\\\">baking</a>\\u00a0has traditionally been performed at home by women for domestic consumption and by men in bakeries and restaurants for local consumption. When production was industrialized, baking was automated by machines in large factories. The art of baking remains a fundamental skill and is important for nutrition, as baked goods, especially breads, are a common but important food, both from an economic and cultural point of view. A person who prepares baked goods as a profession is called a baker.</p>\", \"id\": \"970e3b0e-d482-41f6-86bf-212bdf482c3b\"}, {\"type\": \"image_block\", \"value\": {\"image\": 12, \"attribution\": \"\", \"caption\": \"\"}, \"id\": \"ae86090e-e6de-4159-8794-a77147c89ac0\"}]",
     "subtitle": "The art of baking",
     "date_published": "2017-02-14"
   }
@@ -3421,7 +4864,7 @@
   "fields": {
     "introduction": "Nordic bread culture has existed in Denmark, Finland, Norway, and Sweden from prehistoric time through to the present.",
     "image": 23,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Four grain types dominated in the Nordic countries: barley and rye are the oldest; wheat and oats are more recent. During the Iron Age (500 AD \\u2013 1050 AD), rye became the most commonly used grain, followed by barley and oats. Rye was also the most commonly used grain for bread up until the beginning of the 20th century. Today, older grain types such as emmer and spelt are once again being cultivated and new bread types are being developed from these grains.</p><p>Archaeological finds in Denmark indicate use of the two triticum (wheat) species, emmer and einkorn, during the Mesolithic Period (8900 BC \\u2013 3900 BC). There is no direct evidence of bread-making, but cereals have been crushed, cooked and served as porridge since at least 4,200 BC. During the Neolithic Period (3900 BC \\u2013 1800 BC), when agriculture was introduced, barley seems to have taken over to some extent, and ceramic plates apparently used for baking are found. Moulded cereals, with water added to make a dough and baked or fried in the shape of bread, are known as burial gifts in Iron Age graves (200 AD onwards) in the M\\u00e4lardalen area of central Sweden. However, it is not certain that this bread was eaten; it could just have been a burial gift. During the Bronze Age (1800 BC \\u2013 500 AD), oats and the triticum species spelt seem to have been the most commonly used grains, and we see the first real ovens, probably used for baking small loaves and perhaps the first bread (probably around 400 AD).</p><p><br/></p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 42, \"attribution\": \"Creative Commons\", \"caption\": \"Baking Soda\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>Scandinavian soldiers in Roman times apparently learned baking techniques when working as mercenaries in the Roman army (200\\u2013400 AD). They subsequently took the technique home with them to show that they had been employed in high status work on the continent[citation needed]. Early Christian traditions promoted an interest in bread. Culturally, German traditions have influenced most of the bread types in the Nordic countries. In the eastern part of Finland, there is a cultural link to Russia and Slavic bread traditions.</p><p>In the Nordic countries, bread was the main part of a meal until the late 18th century. Four different bread regions can be found in the Nordic area in the late 19th century. In the south, soft rye bread dominated. Further north came crisp bread, usually baked with rye, then thin and crispy barley bread. In the far north, soft barley loaves dominated. During the 19th century, potatoes began to become the centrepiece of meals and bread was put aside as an extra source of carbohydrates in a meal. Bread still retained its key function for breakfast, as the open sandwich is a starter for most Nordic people today and potatoes are used as a centrepiece in lunches and dinners.</p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 14, \"attribution\": \"Creative Commons\", \"caption\": \"Fresh baked\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>A history of Nordic bread from around 1000 AD and some contemporary types and bread innovations is presented below. Countries are presented in alphabetic order (Denmark, Finland, Iceland, Norway and Sweden). The names of the bread types are mostly given in both the contemporary national language and in English.</p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Four grain types dominated in the Nordic countries: barley and rye are the oldest; wheat and oats are more recent. During the Iron Age (500 AD \\u2013 1050 AD), rye became the most commonly used grain, followed by barley and oats. Rye was also the most commonly used grain for bread up until the beginning of the 20th century. Today, older grain types such as emmer and spelt are once again being cultivated and new bread types are being developed from these grains.</p><p>Archaeological finds in Denmark indicate use of the two triticum (wheat) species, emmer and einkorn, during the Mesolithic Period (8900 BC \\u2013 3900 BC). There is no direct evidence of bread-making, but cereals have been crushed, cooked and served as porridge since at least 4,200 BC. During the Neolithic Period (3900 BC \\u2013 1800 BC), when agriculture was introduced, barley seems to have taken over to some extent, and ceramic plates apparently used for baking are found. Moulded cereals, with water added to make a dough and baked or fried in the shape of bread, are known as burial gifts in Iron Age graves (200 AD onwards) in the M\\u00e4lardalen area of central Sweden. However, it is not certain that this bread was eaten; it could just have been a burial gift. During the Bronze Age (1800 BC \\u2013 500 AD), oats and the triticum species spelt seem to have been the most commonly used grains, and we see the first real ovens, probably used for baking small loaves and perhaps the first bread (probably around 400 AD).</p><p><br/></p>\", \"id\": \"8972920e-1997-403e-88e5-cd7d3228df76\"}, {\"type\": \"image_block\", \"value\": {\"image\": 42, \"attribution\": \"Creative Commons\", \"caption\": \"Baking Soda\"}, \"id\": \"87524cb8-0d54-4854-b1f3-815906ce8354\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>Scandinavian soldiers in Roman times apparently learned baking techniques when working as mercenaries in the Roman army (200\\u2013400 AD). They subsequently took the technique home with them to show that they had been employed in high status work on the continent[citation needed]. Early Christian traditions promoted an interest in bread. Culturally, German traditions have influenced most of the bread types in the Nordic countries. In the eastern part of Finland, there is a cultural link to Russia and Slavic bread traditions.</p><p>In the Nordic countries, bread was the main part of a meal until the late 18th century. Four different bread regions can be found in the Nordic area in the late 19th century. In the south, soft rye bread dominated. Further north came crisp bread, usually baked with rye, then thin and crispy barley bread. In the far north, soft barley loaves dominated. During the 19th century, potatoes began to become the centrepiece of meals and bread was put aside as an extra source of carbohydrates in a meal. Bread still retained its key function for breakfast, as the open sandwich is a starter for most Nordic people today and potatoes are used as a centrepiece in lunches and dinners.</p>\", \"id\": \"f2fd2ea2-3667-4f9d-9748-43d12db875bb\"}, {\"type\": \"image_block\", \"value\": {\"image\": 14, \"attribution\": \"Creative Commons\", \"caption\": \"Fresh baked\"}, \"id\": \"90657285-a18c-405e-a275-ee5aa540aa3b\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>A history of Nordic bread from around 1000 AD and some contemporary types and bread innovations is presented below. Countries are presented in alphabetic order (Denmark, Finland, Iceland, Norway and Sweden). The names of the bread types are mostly given in both the contemporary national language and in English.</p>\", \"id\": \"0b0becff-5833-459d-88f6-a356c7e20404\"}]",
     "subtitle": "Viking bakeries and Norse donuts",
     "date_published": "2017-03-21"
   }
@@ -3432,7 +4875,7 @@
   "fields": {
     "introduction": "During the early years of European settlement of the Americas, settlers and some groups of Indigenous peoples of the Americas used soda or pearl ash, more commonly known as potash (pot ash) or potassium carbonate, as a leavening agent (the forerunner to baking soda) in quick breads.",
     "image": 42,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Since it has long been known and is widely used, the salt has many related names such as baking soda, bread soda, cooking soda, and bicarbonate of soda. In colloquial usage, the names sodium bicarbonate and bicarbonate of soda are often truncated. Forms such as sodium bicarb, bicarb soda, bicarbonate, bicarb, or even bica are common. The word saleratus, from Latin <i>sal \\u00e6ratus</i> meaning \\\"aerated salt\\\", was widely used in the 19th century for both sodium bicarbonate and potassium bicarbonate.</p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 15, \"attribution\": \"Creative Commons\", \"caption\": \"Fresh baked\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>The prefix, bi, in bicarbonate comes from an outdated naming system and is based on the observation that there is twice as much carbonate (CO3) per sodium in\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Sodium_bicarbonate\\\">sodium bicarbonate</a>\\u00a0(NaHCO3) as there is carbonate per sodium in sodium carbonate (Na2CO3) and other carbonates. The modern way of analyzing the situation based on the exact chemical composition (which was unknown when the name sodium bicarbonate was coined) says this the other way around: there is half as much sodium in NaHCO3 as in Na2CO3 (Na versus Na2).</p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 37, \"attribution\": \"Creative Commons\", \"caption\": \"Cornucopia of Breads\"}}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Since it has long been known and is widely used, the salt has many related names such as baking soda, bread soda, cooking soda, and bicarbonate of soda. In colloquial usage, the names sodium bicarbonate and bicarbonate of soda are often truncated. Forms such as sodium bicarb, bicarb soda, bicarbonate, bicarb, or even bica are common. The word saleratus, from Latin <i>sal \\u00e6ratus</i> meaning \\\"aerated salt\\\", was widely used in the 19th century for both sodium bicarbonate and potassium bicarbonate.</p>\", \"id\": \"e2231d1b-f581-4573-9b2c-5fb09579a6b3\"}, {\"type\": \"image_block\", \"value\": {\"image\": 15, \"attribution\": \"Creative Commons\", \"caption\": \"Fresh baked\"}, \"id\": \"b7ceac5b-db13-4160-97fe-f4f8234a88cb\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>The prefix, bi, in bicarbonate comes from an outdated naming system and is based on the observation that there is twice as much carbonate (CO3) per sodium in\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Sodium_bicarbonate\\\">sodium bicarbonate</a>\\u00a0(NaHCO3) as there is carbonate per sodium in sodium carbonate (Na2CO3) and other carbonates. The modern way of analyzing the situation based on the exact chemical composition (which was unknown when the name sodium bicarbonate was coined) says this the other way around: there is half as much sodium in NaHCO3 as in Na2CO3 (Na versus Na2).</p>\", \"id\": \"0c6d62f2-71f6-4c79-b0d1-56b49ff33fae\"}, {\"type\": \"image_block\", \"value\": {\"image\": 37, \"attribution\": \"Creative Commons\", \"caption\": \"Cornucopia of Breads\"}, \"id\": \"95525b64-590c-4ffe-bf02-9a77a40832ee\"}]",
     "subtitle": "The ingredients of traditional soda bread are flour, bread soda, salt, and buttermilk.",
     "date_published": "2017-02-08"
   }
@@ -3443,7 +4886,7 @@
   "fields": {
     "introduction": "Sandwich bread (also referred to as sandwich loaf)  is bread that is prepared specifically to be used for the preparation of sandwiches.",
     "image": 25,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Sandwich breads are produced in many varieties, such as white, whole wheat, sourdough, rye, multigrain and others. Sandwich bread may be formulated to slice easily,[8] cleanly or uniformly, and may have a fine crumb (the soft, inner part of bread) and a light texture.[4] Sandwich bread may be designed to have a balanced proportion of crumb and crust, whereby the bread holds and supports fillings in place and reduces drips and messiness. <a href=\\\"https://en.wikipedia.org/wiki/Sandwich_bread\\\">Some may be designed</a> to not become crumbly, hardened, dried or have too squishy a texture.</p>\"}, {\"type\": \"block_quote\", \"value\": {\"attribute_name\": \"Jim Davis\", \"text\": \"Vegetables are a must on a diet. I suggest carrot cake, zucchini bread, and pumpkin pie.\"}}, {\"type\": \"image_block\", \"value\": {\"image\": 35, \"attribution\": \"Creative Commons\", \"caption\": \"Belgian Waffle\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>Sandwich bread can refer to cross-sectionally square, sliced white and wheat bread, which has been described as \\\"perfectly designed for holding square luncheon meat\\\".[10] The bread used for preparing finger sandwiches is sometimes referred to as sandwich bread.[10] Pan de molde is a sandwich loaf.[11][12] Some sandwich breads are designed for use in the creation of specific types of sandwiches, such as the submarine sandwich.[13] For barbecuing, use of a high-quality white sandwich bread has been described as suitable for toasting over a fire.[14] Gluten-free sandwich bread may be prepared using gluten-free flour, teff flour.[15][16] and other ingredients.<br/></p><p>In the 1930s in the United States, the term sandwich loaf referred to sliced bread.[10] In contemporary times, U.S. consumers sometimes refer to white bread such as Wonder Bread as sandwich bread and sandwich loaf.[1] Wonder Bread produced and marketed a bread called Wonder Round sandwich bread, which was designed to be used with round-shaped cold cuts and other fillings such as eggs and hamburgers, but it was discontinued due to low consumer demand.[17] American sandwich breads have historically included some fat derived from the use of milk or oil to enrich the bread.</p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Sandwich breads are produced in many varieties, such as white, whole wheat, sourdough, rye, multigrain and others. Sandwich bread may be formulated to slice easily,[8] cleanly or uniformly, and may have a fine crumb (the soft, inner part of bread) and a light texture.[4] Sandwich bread may be designed to have a balanced proportion of crumb and crust, whereby the bread holds and supports fillings in place and reduces drips and messiness. <a href=\\\"https://en.wikipedia.org/wiki/Sandwich_bread\\\">Some may be designed</a> to not become crumbly, hardened, dried or have too squishy a texture.</p>\", \"id\": \"9fc57565-56d9-4ee1-99e4-a1fcb84280b9\"}, {\"type\": \"block_quote\", \"value\": {\"attribute_name\": \"Jim Davis\", \"text\": \"Vegetables are a must on a diet. I suggest carrot cake, zucchini bread, and pumpkin pie.\"}, \"id\": \"c19b625d-55e2-452a-a9b2-150c90412ed1\"}, {\"type\": \"image_block\", \"value\": {\"image\": 35, \"attribution\": \"Creative Commons\", \"caption\": \"Belgian Waffle\"}, \"id\": \"757df4bc-a6fc-4800-865d-746175bea1d5\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>Sandwich bread can refer to cross-sectionally square, sliced white and wheat bread, which has been described as \\\"perfectly designed for holding square luncheon meat\\\".[10] The bread used for preparing finger sandwiches is sometimes referred to as sandwich bread.[10] Pan de molde is a sandwich loaf.[11][12] Some sandwich breads are designed for use in the creation of specific types of sandwiches, such as the submarine sandwich.[13] For barbecuing, use of a high-quality white sandwich bread has been described as suitable for toasting over a fire.[14] Gluten-free sandwich bread may be prepared using gluten-free flour, teff flour.[15][16] and other ingredients.<br/></p><p>In the 1930s in the United States, the term sandwich loaf referred to sliced bread.[10] In contemporary times, U.S. consumers sometimes refer to white bread such as Wonder Bread as sandwich bread and sandwich loaf.[1] Wonder Bread produced and marketed a bread called Wonder Round sandwich bread, which was designed to be used with round-shaped cold cuts and other fillings such as eggs and hamburgers, but it was discontinued due to low consumer demand.[17] American sandwich breads have historically included some fat derived from the use of milk or oil to enrich the bread.</p>\", \"id\": \"8d0c216f-d4c8-4920-8f39-8e307da4f054\"}]",
     "subtitle": "Innovation in the brick oven",
     "date_published": "2017-02-02"
   }
@@ -3454,7 +4897,7 @@
   "fields": {
     "introduction": "A Boston cream pie is a yellow butter cake that is filled with custard or cream and topped with chocolate glaze.",
     "image": 43,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Despite its name, it is in fact a cake, and not a pie.[2] The dessert acquired its name when cakes and pies were cooked in the same pans, and the words were used interchangeably.[3] In the latter part of the 19th century, this type of cake was variously called a \\\"cream pie\\\", a \\\"chocolate cream pie\\\", or a \\\"custard cake\\\".[3]</p><p>Owners of the Parker House Hotel in Boston claim that the Boston cream pie was first created at the hotel by Armenian-French chef M. Sanzian in 1856.[4] Called a \\\"Chocolate Cream Pie\\\", this cake consisted of two layers of French butter sponge cake filled with cr\\u00e8me p\\u00e2tissi\\u00e8re and brushed with a rum syrup, its side coated with cr\\u00e8me p\\u00e2tissi\\u00e8re overlain with toasted sliced almonds, and the top coated with chocolate fondant.[5] However, historians dispute this claim to primacy; while this cake may have been served then, there is no specific contemporaneous evidence of it, and custard-filled cake was already popular at that time.[3]</p>\"}, {\"type\": \"image_block\", \"value\": {\"image\": 15, \"attribution\": \"Creative Commons\", \"caption\": \"Central Bakery\"}}, {\"type\": \"paragraph_block\", \"value\": \"<p>The cake is likely derived from the Washington pie, a two-layer yellow cake filled with jam and topped with confectioner's sugar, for which pastry cream of custard eventually replaced the jam, and a chocolate glaze replaced the confectioner's sugar.[2] Today, the cake is topped with a chocolate glaze (such as ganache) and sometimes powdered sugar or a cherry.</p><p>The name first appeared in the 1872 Methodist Almanac.[3] Another early printed use of the term \\\"Boston cream pie\\\" occurred in the Granite Iron Ware Cook Book, printed in 1878.[2] The earliest known recipe of the modern variant was printed in Miss Parloa's Kitchen Companion in 1887 as \\\"Chocolate Cream Pie\\\".[2]</p>\"}]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Despite its name, it is in fact a cake, and not a pie.[2] The dessert acquired its name when cakes and pies were cooked in the same pans, and the words were used interchangeably.[3] In the latter part of the 19th century, this type of cake was variously called a \\\"cream pie\\\", a \\\"chocolate cream pie\\\", or a \\\"custard cake\\\".[3]</p><p>Owners of the Parker House Hotel in Boston claim that the Boston cream pie was first created at the hotel by Armenian-French chef M. Sanzian in 1856.[4] Called a \\\"Chocolate Cream Pie\\\", this cake consisted of two layers of French butter sponge cake filled with cr\\u00e8me p\\u00e2tissi\\u00e8re and brushed with a rum syrup, its side coated with cr\\u00e8me p\\u00e2tissi\\u00e8re overlain with toasted sliced almonds, and the top coated with chocolate fondant.[5] However, historians dispute this claim to primacy; while this cake may have been served then, there is no specific contemporaneous evidence of it, and custard-filled cake was already popular at that time.[3]</p>\", \"id\": \"60ccf2c6-8857-43fc-956b-89225d057b7f\"}, {\"type\": \"image_block\", \"value\": {\"image\": 15, \"attribution\": \"Creative Commons\", \"caption\": \"Central Bakery\"}, \"id\": \"43e93c6d-8691-4733-be1a-bf3caf55dce3\"}, {\"type\": \"paragraph_block\", \"value\": \"<p>The cake is likely derived from the Washington pie, a two-layer yellow cake filled with jam and topped with confectioner's sugar, for which pastry cream of custard eventually replaced the jam, and a chocolate glaze replaced the confectioner's sugar.[2] Today, the cake is topped with a chocolate glaze (such as ganache) and sometimes powdered sugar or a cherry.</p><p>The name first appeared in the 1872 Methodist Almanac.[3] Another early printed use of the term \\\"Boston cream pie\\\" occurred in the Granite Iron Ware Cook Book, printed in 1878.[2] The earliest known recipe of the modern variant was printed in Miss Parloa's Kitchen Companion in 1887 as \\\"Chocolate Cream Pie\\\".[2]</p>\", \"id\": \"5b475721-819a-4309-9220-8ad93a4687f9\"}]",
     "subtitle": "Banana toffee chocolate pie?",
     "date_published": "2017-02-24"
   }
@@ -3467,17 +4910,17 @@
     "from_address": "you@example.com",
     "subject": "Contact message from Wagtail Demo site",
     "image": null,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>We'd love to hear from you! Drop us a line to let us know what you liked or didn't like about your recent store visit, or if you have comments or questions about this site.\\u00a0</p><p>This form is for demo purposes only - email goes nowhere. Developers: \\u00a0Edit the \\\"To Address\\\" field in the Form object in the Wagtail admin, and see the Email notes in the project readme to make your instance send live email.</p>\"}]",
-    "thank_you_text": "<p>Thanks!</p><p>We've received your message and will get back to you shortly.</p>"
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Nous adrorrons recevoir vos retours et vos encouragements! Prenez la liberter de nous envoyer quelques ligne ci-dessous.</p>\", \"id\": \"bf583965-b79c-453c-91f0-75242bed767e\"}]",
+    "thank_you_text": "<p>Merci!</p><p>Nous avons re\u00e7u votre message, nous reviendrons vers vous bient\u00f4t.</p>"
   }
 },
 {
   "model": "base.gallerypage",
   "pk": 70,
   "fields": {
-    "introduction": "Some of our best-baked images, from around the world.",
+    "introduction": "Quelques une de nos meilleurs fourn\u00e9es d'images, depuis partout dans le monde.",
     "image": 23,
-    "body": "[]",
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Gallerie</p>\", \"id\": \"51baad65-fed4-4ee2-82fe-73f8fb2f6fe9\"}]",
     "collection": 2
   }
 },
@@ -3485,17 +4928,17 @@
   "model": "base.homepage",
   "pk": 60,
   "fields": {
-    "image": 9,
-    "hero_text": "A sample site designed to demonstrate the capabilities of the Wagtail Content Management System.",
-    "hero_cta": "Learn more about Wagtail",
-    "hero_cta_link": 76,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><b>Bread</b>\\u00a0is a\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Staple_food\\\">staple food</a>\\u00a0prepared from a\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Dough\\\">dough</a>\\u00a0of\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Flour\\\">flour</a>\\u00a0and\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Water\\\">water</a>, usually by\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Baking\\\">baking</a>. Throughout recorded history it has been popular around the world and is one of the oldest artificial foods, having been of importance since the dawn of\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Agriculture#History\\\">agriculture</a>.</p><p>Proportions of types of flour and other ingredients vary widely, as do modes of preparation. As a result, types, shapes, sizes, and textures of breads differ around the world. Bread may be\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Leaven\\\">leavened</a>\\u00a0by processes such as reliance on naturally occurring\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Sourdough\\\">sourdough</a>\\u00a0microbes, chemicals, industrially produced yeast, or high-pressure aeration. Some bread is cooked before it can leaven, including for traditional or religious reasons. Non-cereal ingredients such as fruits, nuts and fats may be included. Commercial bread commonly contains additives to improve flavor, texture, color, shelf life, and ease of manufacturing.</p>\"}]",
+    "image": 54,
+    "hero_text": "Redecouvrez le pain d'autre fois, d\u00e9licieux, naturel et plein de bonnes choses",
+    "hero_cta": "Nous retrouver",
+    "hero_cta_link": 63,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><b>Le Pain</b> est l&#x27;aliment le plus consomm\\u00e9 au Maroc, pr\\u00e9parer \\u00e0 partir de .... TODO</p>\", \"id\": \"b5603269-cf8b-4678-848b-c3dd84ed731f\"}]",
     "promo_image": 37,
-    "promo_title": "Our most excellent bread",
-    "promo_text": "<p>There's a lot that we can say about our bread but frankly we think you need to taste it to believe it. Crafted from lines of Python, Django and the old staples of HTML, CSS and JS we think you'll love what we're baking. With our demonstrations across our fair Island you're never far from a treat. Come visit us whenever you're nearby.</p>",
-    "featured_section_1_title": "Breads",
+    "promo_title": "Nos meilleurs pains",
+    "promo_text": "<p>Notre philosophie, proposer des pains de bonne qualit\u00e9, 100% naturls et pleins de bonnes choses pour notre corps. Il est temps de red\u00e9couvrire ce que les anciens appelaient du bon pain, travaill\u00e9 avec amour et ne contenait que ce que la terre nous offre, sans suppl\u00e9ments industriels ni d&#x27;ingr\u00e9dients modifi\u00e9 au profit de la productivit\u00e9.</p>",
+    "featured_section_1_title": "Pains",
     "featured_section_1": 3,
-    "featured_section_2_title": "Locations",
+    "featured_section_2_title": "Boutique",
     "featured_section_2": 63,
     "featured_section_3_title": "Blog",
     "featured_section_3": 61
@@ -3507,7 +4950,7 @@
   "fields": {
     "introduction": "Things to know about this demo site",
     "image": 41,
-    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<h2>Welcome to the Wagtail Demo Site!</h2><p>If you've gotten this far, congratulations - you're running an instance of a killer content management system written for and on top of Django, <i>the framework for perfectionists with deadlines.</i></p><p>What does Wagtail get you that Django alone does not?\\u00a0</p><p></p><ul><li>Focus on content creators/managers, rather than developers (but developer-friendly!)</li><li>\\\"Page-centric\\\" content modeling</li><li>Beautiful, modern, intuitive user interface optimized for content people</li><li>Super-powerful hierarchical content management (\\\"content trees\\\")</li><li>User- and group-based permissions system attached to content hierarchies</li><li>Flexible image resizing with a ton of image display helpers</li><li>Innovative \\\"<a href=\\\"https://torchbox.com/blog/rich-text-fields-and-faster-horses/\\\">StreamFields</a>\\\" as an alternative to traditional \\\"anything goes\\\" rich text fields</li><li>Intuitive choosers for embedded Pages, Images, Documents and other content</li><li>Native integration with ElasticSearch to help you build powerful search features</li><li>Template tags to help create image renditions, smart links, and to navigate content trees</li></ul><p>If you're new to Wagtail, there are two primary paths to learning:</p><p></p><ul><li>The source code that powers this demo site</li><li>The official <a href=\\\"http://docs.wagtail.io/en/stable/getting_started/index.html\\\">tutorial</a></li></ul><h3>Wagtail Features Demonstrated in This Demo</h3><p></p><p>This demo is aimed primarily at developers wanting to learn more about the internals of Wagtail, and assumes you'll be reading its source code. After browsing the features, pay special attention to code we've used for:</p><p></p><ul><li>Dividing a project up into multiple apps</li><li>Custom content models and \\\"contexts\\\" in the \\\"breads\\\" and \\\"locations\\\" apps</li><li>A typical weblog in the \\\"blog\\\" app</li><li>Example of using a \\\"base\\\" app to contain misc additional functionality (e.g. Contact Form, About, etc.)</li><li>\\\"StandardPage\\\" model using mixins borrowed from other apps</li><li>Example of customizing the Wagtail Admin via <i>wagtail_hooks</i></li><li>Example of using the Wagtail \\\"snippets\\\" system to represent bread categories, countries and ingredients</li><li>Example of a custom \\\"Galleries\\\" feature that pulls in images used in other content types in the system</li><li>Example of creating ManyToMany relationships via the Ingredients feature on BreadPage</li><li>Lots more</li></ul><p></p><p></p>\"}]"
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<h2>Welcome to the Wagtail Demo Site!</h2><p>If you've gotten this far, congratulations - you're running an instance of a killer content management system written for and on top of Django, <i>the framework for perfectionists with deadlines.</i></p><p>What does Wagtail get you that Django alone does not?\\u00a0</p><p></p><ul><li>Focus on content creators/managers, rather than developers (but developer-friendly!)</li><li>\\\"Page-centric\\\" content modeling</li><li>Beautiful, modern, intuitive user interface optimized for content people</li><li>Super-powerful hierarchical content management (\\\"content trees\\\")</li><li>User- and group-based permissions system attached to content hierarchies</li><li>Flexible image resizing with a ton of image display helpers</li><li>Innovative \\\"<a href=\\\"https://torchbox.com/blog/rich-text-fields-and-faster-horses/\\\">StreamFields</a>\\\" as an alternative to traditional \\\"anything goes\\\" rich text fields</li><li>Intuitive choosers for embedded Pages, Images, Documents and other content</li><li>Native integration with ElasticSearch to help you build powerful search features</li><li>Template tags to help create image renditions, smart links, and to navigate content trees</li></ul><p>If you're new to Wagtail, there are two primary paths to learning:</p><p></p><ul><li>The source code that powers this demo site</li><li>The official <a href=\\\"http://docs.wagtail.io/en/stable/getting_started/index.html\\\">tutorial</a></li></ul><h3>Wagtail Features Demonstrated in This Demo</h3><p></p><p>This demo is aimed primarily at developers wanting to learn more about the internals of Wagtail, and assumes you'll be reading its source code. After browsing the features, pay special attention to code we've used for:</p><p></p><ul><li>Dividing a project up into multiple apps</li><li>Custom content models and \\\"contexts\\\" in the \\\"breads\\\" and \\\"locations\\\" apps</li><li>A typical weblog in the \\\"blog\\\" app</li><li>Example of using a \\\"base\\\" app to contain misc additional functionality (e.g. Contact Form, About, etc.)</li><li>\\\"StandardPage\\\" model using mixins borrowed from other apps</li><li>Example of customizing the Wagtail Admin via <i>wagtail_hooks</i></li><li>Example of using the Wagtail \\\"snippets\\\" system to represent bread categories, countries and ingredients</li><li>Example of a custom \\\"Galleries\\\" feature that pulls in images used in other content types in the system</li><li>Example of creating ManyToMany relationships via the Ingredients feature on BreadPage</li><li>Lots more</li></ul><p></p><p></p>\", \"id\": \"9c53b43f-fa75-4084-ae37-0b5153fc981b\"}]"
   }
 }
 ]

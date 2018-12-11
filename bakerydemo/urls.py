@@ -7,7 +7,7 @@ from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
 from wagtail.contrib.sitemaps.views import sitemap
 from wagtail.core import urls as wagtail_urls
-# from wagtail.images.views.serve import ServeView
+from wagtail.images.views.serve import ServeView
 
 
 from bakerydemo.search import views as search_views
@@ -28,7 +28,8 @@ urlpatterns = [
     # Making the view redirect instead of serve
     # see:
     # http://docs.wagtail.io/en/v2.3/advanced_topics/images/image_serve_view.html
-    # url(r'^images/([^/]*)/(\d*)/([^/]*)/[^/]*$', ServeView.as_view(action='redirect'), name='wagtailimages_serve'),
+    url(r'^media/images/([^/]*)/(\d*)/([^/]*)/[^/]*$',
+        ServeView.as_view(action='redirect'), name='wagtailimages_serve'),
 ]
 
 

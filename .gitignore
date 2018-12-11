@@ -3,7 +3,7 @@
 *.log
 *.swp
 *.retry
-.env
+
 *~
 /logs
 /data
@@ -21,3 +21,4 @@ __pycache__
 hub
 hub.enc
 nottocommit
+.env
